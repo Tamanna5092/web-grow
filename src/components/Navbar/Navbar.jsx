@@ -41,22 +41,22 @@ export default function Navbar() {
       </li>
       <li>
         <NavLink
-          to="skills"
-          className={({ isActive }) =>
-            isActive ? "navlink-active" : "navlink-inactive"
-          }
-        >
-          Skills
-        </NavLink>
-      </li>
-      <li>
-        <NavLink
           to="about"
           className={({ isActive }) =>
             isActive ? "navlink-active" : "navlink-inactive"
           }
         >
           About
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to="skills"
+          className={({ isActive }) =>
+            isActive ? "navlink-active" : "navlink-inactive"
+          }
+        >
+          Skills
         </NavLink>
       </li>
       <li>
