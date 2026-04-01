@@ -5,13 +5,11 @@ import Footer from "./components/Footer/Footer";
 function App() {
   return (
     <>
-      <div className="max-w-7xl mx-auto">
-        <Navbar></Navbar>
-      </div>
+    <>
+            <Navbar></Navbar>
       <Outlet></Outlet>
-      <div className="max-w-7xl mx-auto">
-        <Footer></Footer>
-      </div>
+      <Footer></Footer>
+    </>
     </>
   );
 }

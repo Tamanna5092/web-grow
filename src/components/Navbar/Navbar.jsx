@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { FaCode, FaRegMoon } from "react-icons/fa";
+import { FaRegMoon } from "react-icons/fa";
 import { IoClose, IoMenuSharp } from "react-icons/io5";
 import { TiWeatherSunny } from "react-icons/ti";
-import { Link } from "react-router";
+import { Link, NavLink } from "react-router";
 
 export default function Navbar() {
   const [theme, setTheme] = useState("light");
@@ -27,118 +27,149 @@ export default function Navbar() {
     localStorage.setItem("theme", newTheme);
   };
 
-  const navlinks = [
-    {
-      title: "Home",
-      path: "/",
-    },
-    {
-      title: "About",
-      path: "about",
-    },
-    {
-      title: "Skills",
-      path: "skills",
-    },
-    {
-      title: "Services",
-      path: "services",
-    },
-    {
-      title: "Projects",
-      path: "projects",
-    },
-    {
-      title: "Career",
-      path: "career",
-    },
-    {
-      title: "Contact",
-      path: "contact",
-    },
-  ];
+  const navLinks = (
+    <>
+      <li>
+        <NavLink
+          to="/"
+          className={({ isActive }) =>
+            isActive ? "navlink-active" : "navlink-inactive"
+          }
+        >
+          Home
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to="skills"
+          className={({ isActive }) =>
+            isActive ? "navlink-active" : "navlink-inactive"
+          }
+        >
+          Skills
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to="about"
+          className={({ isActive }) =>
+            isActive ? "navlink-active" : "navlink-inactive"
+          }
+        >
+          About
+        </NavLink>
+      </li>
+      <li>
+        <details>
+          <summary className="text-(--primary-color) navlink-inactive">
+            Services
+          </summary>
+          <ul class="p-2 bg-base-100 w-52 z-1 space-y-2">
+            <li>
+              <NavLink
+                to={"services/web-development"}
+                className={({ isActive }) =>
+                  isActive ? "navlink-active" : "navlink-inactive"
+                }
+              >
+                Web Development
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to={"services/digital-marketing"}
+                className={({ isActive }) =>
+                  isActive ? "navlink-active" : "navlink-inactive"
+                }
+              >
+                Digital Marketing
+              </NavLink>
+            </li>
+          </ul>
+        </details>
+      </li>
+      <li>
+        <NavLink
+          to="projects"
+          className={({ isActive }) =>
+            isActive ? "navlink-active" : "navlink-inactive"
+          }
+        >
+          Projects
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to="career"
+          className={({ isActive }) =>
+            isActive ? "navlink-active" : "navlink-inactive"
+          }
+        >
+          Career
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to="contact"
+          className={({ isActive }) =>
+            isActive ? "navlink-active" : "navlink-inactive"
+          }
+        >
+          Contact
+        </NavLink>
+      </li>
+    </>
+  );
 
   return (
-    <div className="relative shadow-lg border border-[#fde047] py-3 px-4">
-      <div className="flex justify-between">
-        <div className="logo">
-          <div className="flex items-center gap-1">
-            <span>
-              <FaCode className="w-6 h-6" />
-            </span>
-            <h2 className="lora text-2xl font-semibold text-[#facc15]">
-              {" "}
+    <div class="bg-base-100 shadow-sm">
+      <div className="max-w-7xl mx-auto px-2 py-4 md:px-0">
+        <div className="flex justify-between items-center">
+          <div>
+            <Link
+              to={"/"}
+              className={`text-xl font-bold text-(--primary-color)`}
+            >
               WebGrow
-            </h2>
+            </Link>
           </div>
-        </div>
-        <div className="hidden sm:flex justify-center items-center">
-          <ul className="flex gap-4">
-            {navlinks.map((navlink) => (
-              <li
-                className="hover:text-[#facc15] transition duration-300 cursor-pointer"
-                key={navlink.path}
+          <div className="hidden sm:flex">
+            <ul className="menu menu-horizontal font-semibold px-1 gap-2">
+              {navLinks}
+            </ul>
+          </div>
+          <div>
+            <div className="flex space-x-3">
+              <button
+                onClick={handleThemeToggle}
+                className="border p-2 rounded-full text-(--primary-color) border-(--primary-color) hover:bg-(--primary-color) hover:text-white transition duration-300"
               >
-                <Link
-                  to={`${navlink.path}`}
-                  smooth={true}
-                  duration={600}
-                  offset={-40}
-                >
-                  {navlink.title}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div className="">
-          <div className="flex space-x-4">
-            <button
-              onClick={handleThemeToggle}
-              className="border p-2 rounded-full text-[#facc15] border-[#facc15] hover:bg-[#facc15] hover:text-white transition duration-300"
-            >
-              {theme === "light" ? <FaRegMoon /> : <TiWeatherSunny />}
-            </button>
-            <button
-              onClick={handleOpenMenu}
-              className="flex items-center space-x-4 sm:hidden"
-            >
-              {openMenu ? (
-                <span>
-                  <IoClose className="w-6 h-6" />
-                </span>
-              ) : (
-                <span>
-                  <IoMenuSharp className="w-6 h-6" />
-                </span>
-              )}
-            </button>
+                {theme === "light" ? <FaRegMoon /> : <TiWeatherSunny />}
+              </button>
+              <button
+                onClick={handleOpenMenu}
+                className="flex items-center space-x-4 sm:hidden text-(--primary-color) hover:bg-(--primary-color) hover:text-white transition duration-300"
+              >
+                {openMenu ? (
+                  <span>
+                    <IoClose className="w-6 h-6" />
+                  </span>
+                ) : (
+                  <span>
+                    <IoMenuSharp className="w-6 h-6" />
+                  </span>
+                )}
+              </button>
+            </div>
           </div>
         </div>
+        {/* dropdown */}
+        {openMenu && (
+          <div className="absolute w-full mx-auto bg-base-100/90 backdrop-blur-md text-base-content shadow-xl rounded-2xl z-20 mt-2 sm:hidden">
+            <ul className="menu p-4 font-semibold gap-2">{navLinks}</ul>
+          </div>
+        )}
       </div>
-      {/* dropdown */}
-      {openMenu && (
-        <div className="absolute w-full -ml-4 mx-auto bg-base-100/80 backdrop-blur-md text-base-content shadow-xl rounded-2xl z-20 mt-4 sm:hidden">
-          <ul className="flex flex-col">
-            {navlinks.map((navlink) => (
-              <li
-                className="my-1 px-10 hover:bg-[#facc15] rounded-2xl py-1 transition duration-300 cursor-pointer"
-                key={navlink.path}
-              >
-                <Link
-                  to={`${navlink.path}`}
-                  smooth={true}
-                  duration={600}
-                  offset={-40}
-                  onClick={() => setOpenMenu(false)}
-                >
-                  {navlink.title}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
     </div>
   );
 }

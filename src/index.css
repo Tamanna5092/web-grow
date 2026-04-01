@@ -1,7 +1,9 @@
 @import "tailwindcss";
+
 @plugin "daisyui" {
   themes: light --default, dark --prefersdark, cupcake;
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 .lora {
@@ -14,4 +16,23 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+}
+
+:root {
+  --primary-color: #9F62F2;
+}
+
+[data-theme="dark"] {
+  --primary-color: #facc15;
+}
+
+.navlink-active,
+.navlink-inactive:hover {
+  color: white;
+  background-color: var(--primary-color);
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.navlink-inactive {
+  color: var(--primary-color);
 }

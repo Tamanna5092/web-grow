@@ -1,9 +1,10 @@
 import React from 'react'
+import { Outlet } from 'react-router'
 
 export default function Services() {
   return (
     <div>
-      Services
+      <Outlet></Outlet>
     </div>
   )
 }

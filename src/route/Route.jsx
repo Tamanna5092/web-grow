@@ -7,6 +7,8 @@ import Services from "../pages/Services/Services";
 import Projects from "../pages/Projects/Projects";
 import Career from "../pages/Career/Career";
 import Contact from "../pages/Contact/Contact";
+import WebDevelopment from "../components/WebDevelopment/WebDevelopment";
+import DigitalMarketing from "../components/DigitalMarketing/DigitalMarketing";
 
 const Route = createBrowserRouter([
   {
@@ -16,7 +18,14 @@ const Route = createBrowserRouter([
       { index: true, Component: Home },
       { path: "about", Component: About },
       { path: "skills", Component: Skills },
-      { path: "services", Component: Services },
+      {
+        path: "services",
+        Component: Services,
+        children: [
+          { path: "web-development", Component: WebDevelopment },
+          { path: "digital-marketing", Component: DigitalMarketing },
+        ],
+      },
       { path: "projects", Component: Projects },
       { path: "career", Component: Career },
       { path: "contact", Component: Contact },
