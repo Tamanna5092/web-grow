@@ -12,12 +12,12 @@ export default function OurService() {
           What we do
         </p>
         <h1 className="text-5xl font-extrabold text-center">Our Services</h1>
-        <p className="text-center mt-4 lora text-lg">
+        <p className="text-center mt-4 lora text-lg px-4 md:px-0">
           We offer a wide range of web development and digital marketing
           services to help your business grow online. Our services include:
         </p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-10">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 my-10 px-4 md:px-0">
         <div className="flex flex-col justify-center items-center hover:bg-(--primary-color) hover:text-white transition duration-300 p-10 border-2 border-(--primary-color) rounded-lg box-shadow-custom">
           <span>
             <MdOutlineCampaign className="w-16 h-16" />

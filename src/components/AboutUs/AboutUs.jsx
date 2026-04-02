@@ -3,7 +3,7 @@ import about from '../../assets/aboutUs.avif'
 
 export default function AboutUs() {
   return (
-    <div className=' grid grid-cols-1 md:grid-cols-5 gap-6 my-20'>
+    <div className=' grid grid-cols-1 md:grid-cols-5 gap-8 my-20'>
       <div className='md:col-span-3 flex flex-col px-4 md:px-0'>
         <h2 className='text-3xl md:text-4xl font-bold text-(--primary-color)'>About Us</h2>
         <hr className='w-40 border-2 border-(--primary-color) my-6' />

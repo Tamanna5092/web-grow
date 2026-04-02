@@ -2,6 +2,7 @@ import React from 'react'
 import Banner from '../HeroBanner/HeroBanner'
 import AboutUs from '../AboutUs/AboutUs'
 import OurService from '../OurService/OurService'
+import OurTeam from '../OurTeam/OurTeam'
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
        <div className='max-w-7xl mx-auto'>
         <AboutUs></AboutUs>
         <OurService></OurService>
+        <OurTeam></OurTeam>
     </div>
     </div>
   )
