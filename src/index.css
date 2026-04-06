@@ -1,7 +1,9 @@
 @import "tailwindcss";
+
 @plugin "daisyui" {
   themes: light --default, dark --prefersdark, cupcake;
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 .lora {
@@ -40,6 +42,7 @@ body {
   color: white;
   font-weight: 600;
   padding: 12px 24px;
+  border: 1px solid var(--primary-color);
   border-radius: 8px;
   margin-right: 16px;
   transition: 0.3s;
@@ -55,6 +58,7 @@ body {
   color: var(--primary-color);
   font-weight: 600;
   padding: 12px 24px;
+  border: 1px solid var(--primary-color);
   border-radius: 8px;
   margin-right: 16px;
   transition: 0.3s;
@@ -66,7 +70,7 @@ body {
 }
 
 .box-shadow-custom:hover {
-box-shadow: 0 14px 14px rgba(157, 156, 156, 0.2);
+  box-shadow: 0 14px 14px rgba(157, 156, 156, 0.2);
   transform: translateY(-16px);
   transition: all 0.5s ease;
 }

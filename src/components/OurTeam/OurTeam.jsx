@@ -15,7 +15,7 @@ export default function OurTeam() {
         <div className="relative group rounded-xl px-4 md:px-0">
           <img
             className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-500"
-            src="https://duruthemes.com/demo/html/acens/dark/images/team/01.jpg"
+            src="https://i.ibb.co.com/kQbYGM9/handsome-bearded-guy-posing-against-white-wall-273609-20597.jpg"
             alt="Enrico Brown"
           />
           <div className="absolute inset-0 bg-black/40 group-hover:bg-transparent transition duration-500"></div>
@@ -32,7 +32,7 @@ export default function OurTeam() {
         <div className="relative group rounded-xl px-4 md:px-0">
           <img
             className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-500"
-            src="https://duruthemes.com/demo/html/acens/dark/images/team/01.jpg"
+            src="https://i.ibb.co.com/jZZyQ87/ai-generated-caucasian-successful-confident-young-businesswoman-ceo-boss-bank-employee-worker-manage.jpg"
             alt="Enrico Brown"
           />
           <div className="absolute inset-0 bg-black/40 group-hover:bg-transparent transition duration-500"></div>
@@ -49,7 +49,7 @@ export default function OurTeam() {
         <div className="relative group rounded-xl px-4 md:px-0">
           <img
             className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-500"
-            src="https://duruthemes.com/demo/html/acens/dark/images/team/01.jpg"
+            src="https://i.ibb.co.com/2NkZmNh/istockphoto-1364917563-612x612.jpg"
             alt="Enrico Brown"
           />
           <div className="absolute inset-0 bg-black/40 group-hover:bg-transparent transition duration-500"></div>
