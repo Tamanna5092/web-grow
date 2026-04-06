@@ -3,6 +3,7 @@ import Banner from '../HeroBanner/HeroBanner'
 import AboutUs from '../AboutUs/AboutUs'
 import OurService from '../OurService/OurService'
 import OurTeam from '../OurTeam/OurTeam'
+import ContactUs from '../ContactUs/ContactUs'
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <OurService></OurService>
         <OurTeam></OurTeam>
     </div>
+        <ContactUs></ContactUs>
     </div>
   )
 }

@@ -11,7 +11,7 @@ export default function OurTeam() {
         </p>
         <h1 className="text-5xl font-extrabold text-center">Meet Our Team</h1>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-20 my-10">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-20 mt-10 mb-32">
         <div className="relative group rounded-xl px-4 md:px-0">
           <img
             className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-500"

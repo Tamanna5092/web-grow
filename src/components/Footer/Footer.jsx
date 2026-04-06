@@ -5,7 +5,7 @@ import { BsInstagram, BsTwitterX } from "react-icons/bs";
 
 export default function Footer() {
   return (
-    <footer className="mt-32 py-16 bg-black text-white">
+    <footer className="py-16 bg-black text-white">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 px-4 md:px-0">
         {/* Logo Section */}
         <aside className="lg:col-span-">
