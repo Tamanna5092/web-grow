@@ -46,10 +46,10 @@ export default function About() {
             satisfaction of our clients.
           </p>
         </div>
-        <p className="text-center lora text-lg text-(--primary-color)">
+        <p className="text-center lora text-lg text-(--primary-color) mb-2">
           Our Services
         </p>
-        <h2 className="text-3xl font-bold text-center">What We Offer</h2>
+        <h2 className="text-3xl md:text-5xl font-extrabold text-center">What We Offer</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 my-10">
           <div className="flex flex-col group hover:bg-(--primary-color)/10 transition duration-300 p-6 border-2 border-(--primary-color)/50 shadow-lg rounded-lg box-shadow-custom">
             <span className="">
@@ -110,7 +110,84 @@ export default function About() {
             </p>
           </div>
         </div>
-
+        <div className="my-10">
+          <h2 className="text-3xl md:text-5xl font-extrabold text-center mt-10 mb-6">
+            Why Choose Us
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-10">
+            <div className="group flex flex-col md:flex-row gap-4 bg-(--primary-color)/10 p-6 rounded-lg shadow-md border-2 border-(--primary-color)/10 hover:border-(--primary-color) transition duration-300">
+              <div className="">
+                <span className="">
+                  <SlEnergy className="w-16 h-16 p-4 text-white bg-(--primary-color) rounded-2xl group-hover:rotate-12 transition" />
+                </span>
+              </div>
+              <div>
+                <h4 className="text-xl font-semibold mb-3">
+                  Fast & Reliable Service
+                </h4>
+                <p className="lora text-lg">
+                  We understand the importance of timely delivery and
+                  reliability in the digital world. Our team is dedicated to
+                  providing fast and efficient services without compromising on
+                  quality.
+                </p>
+              </div>
+            </div>
+            <div className="group flex flex-col md:flex-row gap-4 bg-(--primary-color)/10 p-6 rounded-lg shadow-md border-2 border-(--primary-color)/10 hover:border-(--primary-color) transition duration-300">
+              <div className="">
+                <span className="">
+                  <FaRegFaceSmile className="w-16 h-16 p-4 text-white bg-(--primary-color) rounded-2xl group-hover:rotate-12 transition" />
+                </span>
+              </div>
+              <div>
+                <h4 className="text-xl font-semibold mb-3">
+                  Client Satisfaction
+                </h4>
+                <p className="lora text-lg">
+                  Our priority is to ensure our clients are completely satisfied
+                  with the final product. We maintain open communication
+                  throughout the development process to guarantee that your
+                  vision is brought to life exactly as you imagined.
+                </p>
+              </div>
+            </div>
+            <div className="group flex flex-col md:flex-row gap-4 bg-(--primary-color)/10 p-6 rounded-lg shadow-md border-2 border-(--primary-color)/10 hover:border-(--primary-color) transition duration-300">
+              <div className="">
+                <span className="">
+                  <FaDollarSign className="w-16 h-16 p-4 text-white bg-(--primary-color) rounded-2xl group-hover:rotate-12 transition" />
+                </span>
+              </div>
+              <div>
+                <h4 className="text-xl font-semibold mb-3">
+                  Affordable Pricing
+                </h4>
+                <p className="lora text-lg">
+                  We believe that quality web development should be accessible
+                  to businesses of all sizes. That's why we offer competitive
+                  pricing without compromising on the quality of our work.
+                </p>
+              </div>
+            </div>
+            <div className="group flex flex-col md:flex-row gap-4 bg-(--primary-color)/10 p-6 rounded-lg shadow-md border-2 border-(--primary-color)/10 hover:border-(--primary-color) transition duration-300">
+              <div className="">
+                <span className="">
+                  <MdSupportAgent className="w-16 h-16 p-4 text-white bg-(--primary-color) rounded-2xl group-hover:rotate-12 transition" />
+                </span>
+              </div>
+              <div>
+                <h4 className="text-xl font-semibold mb-3">
+                  Dedication Support
+                </h4>
+                <p className="lora text-lg">
+                  Our commitment to our clients extends beyond project
+                  completion. We offer ongoing support and maintenance to ensure
+                  your website continues to perform optimally and remains
+                  up-to-date with the latest technologies.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
