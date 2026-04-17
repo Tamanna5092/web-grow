@@ -1,6 +1,7 @@
 import React from "react";
 import about from "../../assets/aboutUs.avif";
 import { SlEnergy } from "react-icons/sl";
+import group from "../../assets/group-members.jpg";
 import {
   FaChartLine,
   FaCode,
@@ -21,6 +22,8 @@ import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import { GoGoal } from "react-icons/go";
+import { FaRegEye } from "react-icons/fa";
 
 export default function About() {
   return (
@@ -29,20 +32,19 @@ export default function About() {
         <img className="w-full h-full object-cover" src={about} alt="Banner" />
         <div className="absolute inset-0 bg-black/60"></div>
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center w-full px-6">
-          <h1 className="text-5xl font-extrabold text-center">
-            About WebGrow
-          </h1>
+          <h1 className="text-5xl font-extrabold text-center">About WebGrow</h1>
           <p className="text-center lora mt-4 text-lg">
-            We build modern websites and deliver result-driven digital marketing solutions to help your business grow faster online.
+            We build modern websites and deliver result-driven digital marketing
+            solutions to help your business grow faster online.
           </p>
         </div>
       </div>
       <div className="max-w-7xl mx-auto my-10 md:px-0 px-4">
         <div className="my-10">
-          <h2 className="text-3xl font-bold text-center mt-10 mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mt-10 mb-6">
             Our Story
           </h2>
-          <p className="lora text-lg text-(--text-color) text-center">
+          <p className="lora text-lg text-(--text-color) text-center max-w-4xl mx-auto">
             At WebGrow, we are passionate about helping businesses thrive in the
             digital landscape. Our journey began with a simple mission: to
             provide high-quality web development and digital marketing services
@@ -51,6 +53,43 @@ export default function About() {
             projects across various industries, earning the trust and
             satisfaction of our clients.
           </p>
+          <div className="mt-6">
+            <img className="w-full brightness-75" src={group} alt="" />
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="flex flex-col bg-(--primary-color)/10 p-6 rounded-b-2xl hover:shadow-xl transition duration-300">
+              <p className="flex items-center gap-2 lora bg-(--primary-color) text-white py-2 px-4 rounded-full w-fit">
+                <span>
+                  <GoGoal />{" "}
+                </span>
+                Our Mission
+              </p>
+              <h4 className="text-2xl font-bold mt-6">
+                Helping businesses grow online world wide
+              </h4>
+              <p className="mt-3 lora text-lg text-(--text-color)">
+                Our mission is to help businesses grow by delivering modern,
+                high-quality websites and result-driven digital marketing
+                solutions that create real impact.
+              </p>
+            </div>
+            <div className="flex flex-col bg-(--primary-color)/10 p-6 rounded-b-2xl hover:shadow-xl transition duration-300">
+              <p className="flex items-center gap-2 lora bg-(--primary-color) text-white py-2 px-4 rounded-full w-fit">
+                <span>
+                  <FaRegEye />{" "}
+                </span>
+                Our Vision
+              </p>
+              <h4 className="text-2xl font-bold mt-6">
+                We aim to become a trusted digital partner
+              </h4>
+              <p className="mt-3 lora text-lg text-(--text-color)">
+                Our vision is to become a trusted digital partner, empowering
+                businesses worldwide with innovative solutions and long-term
+                success.
+              </p>
+            </div>
+          </div>
         </div>
         <p className="text-center lora text-lg text-(--primary-color) mb-2">
           Our Services
@@ -248,7 +287,9 @@ export default function About() {
                     <FaRegStar className="w-5 h-5"></FaRegStar>
                   </p>
                   <h4 className="text-xl font-semibold mt-4">Emily Johnson</h4>
-                  <p className="text-sm text-(--text-color)">Founder, Startup XYZ</p>
+                  <p className="text-sm text-(--text-color)">
+                    Founder, Startup XYZ
+                  </p>
                 </div>
               </div>
             </SwiperSlide>
@@ -263,9 +304,9 @@ export default function About() {
                 </div>
                 <div className="mt-4">
                   <p className="lora text-lg text-(--text-color)">
-                    "WebGrow transformed our online presence with a stunning digital marketing strategies. Our
-                    traffic and sales have significantly increased since working
-                    with them."
+                    "WebGrow transformed our online presence with a stunning
+                    digital marketing strategies. Our traffic and sales have
+                    significantly increased since working with them."
                   </p>
                   <p className="flex text-orange-400 gap-1 justify-center my-4">
                     <FaStar className="w-5 h-5"></FaStar>
@@ -275,7 +316,9 @@ export default function About() {
                     <FaStar className="w-5 h-5"></FaStar>
                   </p>
                   <h4 className="text-xl font-semibold mt-4">Michael Brown</h4>
-                  <p className="text-sm text-(--text-color)">CTO, Tech Solutions</p>
+                  <p className="text-sm text-(--text-color)">
+                    CTO, Tech Solutions
+                  </p>
                 </div>
               </div>
             </SwiperSlide>
@@ -303,7 +346,9 @@ export default function About() {
                     <FaRegStar className="w-5 h-5"></FaRegStar>
                   </p>
                   <h4 className="text-xl font-semibold mt-4">Sarah Lee</h4>
-                  <p className="text-sm text-(--text-color)">Marketing Director, Creative Agency</p>
+                  <p className="text-sm text-(--text-color)">
+                    Marketing Director, Creative Agency
+                  </p>
                 </div>
               </div>
             </SwiperSlide>
@@ -331,7 +376,9 @@ export default function About() {
                     <FaRegStar className="w-5 h-5"></FaRegStar>
                   </p>
                   <h4 className="text-xl font-semibold mt-4">David Kim</h4>
-                  <p className="text-sm text-(--text-color)">CEO, Startup Inc.</p>
+                  <p className="text-sm text-(--text-color)">
+                    CEO, Startup Inc.
+                  </p>
                 </div>
               </div>
             </SwiperSlide>
