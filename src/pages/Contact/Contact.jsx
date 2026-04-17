@@ -1,5 +1,4 @@
 import React from "react";
-import { BiRightArrow } from "react-icons/bi";
 import { FaRegHandPointRight } from "react-icons/fa6";
 import {
   IoCallOutline,
@@ -21,7 +20,7 @@ export default function Contact() {
         </p>
         <div className="space-y-4">
           <div className="flex items-center gap-3">
-            <span className="border-2 border-(--primary-color) rounded-full hover:bg-(--primary-color) hover:text-white">
+            <span className="border-2 border-(--primary-color) rounded-full hover:bg-(--primary-color) hover:text-white transition duration-300">
               {" "}
               <IoCallOutline className="w-10 h-10 p-2" />
             </span>
@@ -30,7 +29,7 @@ export default function Contact() {
             </div>
           </div>
           <div className="flex items-center gap-3">
-            <span className="border-2 border-(--primary-color) rounded-full hover:bg-(--primary-color) hover:text-white">
+            <span className="border-2 border-(--primary-color) rounded-full hover:bg-(--primary-color) hover:text-white transition duration-300">
               {" "}
               <IoMailOutline className="w-10 h-10 p-2" />
             </span>
@@ -39,7 +38,7 @@ export default function Contact() {
             </div>
           </div>
           <div className="flex items-center gap-3">
-            <span className="border-2 border-(--primary-color) rounded-full hover:bg-(--primary-color) hover:text-white">
+            <span className="border-2 border-(--primary-color) rounded-full hover:bg-(--primary-color) hover:text-white transition duration-300">
               {" "}
               <IoLocationOutline className="w-10 h-10 p-2" />
             </span>

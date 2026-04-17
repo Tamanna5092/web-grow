@@ -11,7 +11,9 @@ export default function OurService() {
         <p className="text-center lora text-lg text-(--primary-color)">
           What we do
         </p>
-        <h1 className="text-5xl font-extrabold text-center">Our Services</h1>
+        <h1 className="text-3xl md:text-5xl font-extrabold text-center">
+          Our Services
+        </h1>
         <p className="text-center mt-4 lora text-lg px-4 md:px-0">
           We offer a wide range of web development and digital marketing
           services to help your business grow online. Our services include:

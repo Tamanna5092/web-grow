@@ -5,7 +5,6 @@ import About from "../pages/About/About";
 import Skills from "../pages/Skills/Skills";
 import Services from "../pages/Services/Services";
 import Projects from "../pages/Projects/Projects";
-import Career from "../pages/Career/Career";
 import Contact from "../pages/Contact/Contact";
 import WebDevelopment from "../components/WebDevelopment/WebDevelopment";
 import DigitalMarketing from "../components/DigitalMarketing/DigitalMarketing";
@@ -27,7 +26,6 @@ const Route = createBrowserRouter([
         ],
       },
       { path: "projects", Component: Projects },
-      { path: "career", Component: Career },
       { path: "contact", Component: Contact },
     ],
   },

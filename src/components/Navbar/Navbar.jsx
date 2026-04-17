@@ -32,6 +32,7 @@ export default function Navbar() {
       <li>
         <NavLink
           to="/"
+          onClick={() => setOpenMenu(false)}
           className={({ isActive }) =>
             isActive ? "navlink-active" : "navlink-inactive"
           }
@@ -42,6 +43,7 @@ export default function Navbar() {
       <li>
         <NavLink
           to="about"
+          onClick={() => setOpenMenu(false)}
           className={({ isActive }) =>
             isActive ? "navlink-active" : "navlink-inactive"
           }
@@ -52,6 +54,7 @@ export default function Navbar() {
       <li>
         <NavLink
           to="skills"
+          onClick={() => setOpenMenu(false)}
           className={({ isActive }) =>
             isActive ? "navlink-active" : "navlink-inactive"
           }
@@ -68,6 +71,7 @@ export default function Navbar() {
             <li>
               <NavLink
                 to={"services/web-development"}
+                onClick={() => setOpenMenu(false)}
                 className={({ isActive }) =>
                   isActive ? "navlink-active" : "navlink-inactive"
                 }
@@ -78,6 +82,7 @@ export default function Navbar() {
             <li>
               <NavLink
                 to={"services/digital-marketing"}
+                onClick={() => setOpenMenu(false)}
                 className={({ isActive }) =>
                   isActive ? "navlink-active" : "navlink-inactive"
                 }
@@ -91,6 +96,7 @@ export default function Navbar() {
       <li>
         <NavLink
           to="projects"
+          onClick={() => setOpenMenu(false)}
           className={({ isActive }) =>
             isActive ? "navlink-active" : "navlink-inactive"
           }
@@ -100,17 +106,8 @@ export default function Navbar() {
       </li>
       <li>
         <NavLink
-          to="career"
-          className={({ isActive }) =>
-            isActive ? "navlink-active" : "navlink-inactive"
-          }
-        >
-          Career
-        </NavLink>
-      </li>
-      <li>
-        <NavLink
           to="contact"
+          onClick={() => setOpenMenu(false)}
           className={({ isActive }) =>
             isActive ? "navlink-active" : "navlink-inactive"
           }
@@ -122,7 +119,7 @@ export default function Navbar() {
   );
 
   return (
-    <div class="bg-base-100 shadow-sm">
+    <div className="bg-base-100 shadow-sm">
       <div className="max-w-7xl mx-auto px-2 py-4 md:px-0">
         <div className="flex justify-between items-center">
           <div>
