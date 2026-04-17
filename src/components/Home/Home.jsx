@@ -4,6 +4,7 @@ import AboutUs from '../AboutUs/AboutUs'
 import OurService from '../OurService/OurService'
 import OurTeam from '../OurTeam/OurTeam'
 import ContactUs from '../ContactUs/ContactUs'
+import FAQ from '../FAQ/FAQ'
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <AboutUs></AboutUs>
         <OurService></OurService>
         <OurTeam></OurTeam>
+        <FAQ></FAQ>
     </div>
         <ContactUs></ContactUs>
     </div>

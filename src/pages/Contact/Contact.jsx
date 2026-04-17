@@ -13,7 +13,7 @@ export default function Contact() {
         <h3 className="text-2xl md:text-3xl font-bold text-(--primary-color) w-fit border-b-2 border-(--primary-color) mb-10">
           Contact Us
         </h3>
-        <p className="lora text-lg mb-6">
+        <p className="lora text-lg text-(--text-color) mb-6">
           Whether you need a website or digital marketing services, we are here
           to help. Get in touch with us and let's build something amazing
           together.
@@ -25,7 +25,9 @@ export default function Contact() {
               <IoCallOutline className="w-10 h-10 p-2" />
             </span>
             <div>
-              <p className="lora text-lg">+8801982845092</p>
+              <p className="lora text-lg text-(--text-color)">
+                +8801982845092
+              </p>
             </div>
           </div>
           <div className="flex items-center gap-3">
@@ -34,7 +36,9 @@ export default function Contact() {
               <IoMailOutline className="w-10 h-10 p-2" />
             </span>
             <div>
-              <p className="lora text-lg">webgrow@company.com</p>
+              <p className="lora text-lg text-(--text-color)">
+                webgrow@company.com
+              </p>
             </div>
           </div>
           <div className="flex items-center gap-3">
@@ -43,7 +47,9 @@ export default function Contact() {
               <IoLocationOutline className="w-10 h-10 p-2" />
             </span>
             <div>
-              <p className="lora text-lg">Kishoreganj, Dhaka, Bangladesh</p>
+              <p className="lora text-lg text-(--text-color)">
+                Kishoreganj, Dhaka, Bangladesh
+              </p>
             </div>
           </div>
         </div>

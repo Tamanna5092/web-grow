@@ -30,11 +30,10 @@ export default function About() {
         <div className="absolute inset-0 bg-black/60"></div>
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center w-full px-6">
           <h1 className="text-5xl font-extrabold text-center">
-            Welcome to WebGrow
+            About WebGrow
           </h1>
           <p className="text-center lora mt-4 text-lg">
-            Your one-stop solution for all your web development and digital
-            marketing needs.
+            We build modern websites and deliver result-driven digital marketing solutions to help your business grow faster online.
           </p>
         </div>
       </div>
@@ -43,7 +42,7 @@ export default function About() {
           <h2 className="text-3xl font-bold text-center mt-10 mb-6">
             Our Story
           </h2>
-          <p className="lora text-lg text-center">
+          <p className="lora text-lg text-(--text-color) text-center">
             At WebGrow, we are passionate about helping businesses thrive in the
             digital landscape. Our journey began with a simple mission: to
             provide high-quality web development and digital marketing services
@@ -65,7 +64,7 @@ export default function About() {
               <MdOutlineCampaign className="w-16 h-16 p-4 text-white bg-(--primary-color) rounded-2xl group-hover:scale-105 transition" />
             </span>
             <h2 className="text-2xl font-bold mt-6">Digital Marketing</h2>
-            <p className="mt-3 lora text-lg">
+            <p className="mt-3 lora text-lg text-(--text-color)">
               Boost your brand with smart digital marketing solutions.
             </p>
           </div>
@@ -74,7 +73,7 @@ export default function About() {
               <TfiLayoutMediaCenterAlt className="w-16 h-16 p-4 text-white bg-(--primary-color) rounded-2xl group-hover:scale-105 transition" />
             </span>
             <h2 className="text-2xl font-bold mt-6">Social Media Management</h2>
-            <p className="mt-3 lora text-lg">
+            <p className="mt-3 lora text-lg text-(--text-color)">
               Manage your social media presence and engage with your audience
               effectively.
             </p>
@@ -84,7 +83,7 @@ export default function About() {
               <FaChartLine className="w-16 h-16 p-4 text-white bg-(--primary-color) rounded-2xl group-hover:scale-105 transition" />
             </span>
             <h2 className="text-2xl font-bold mt-6">SEO Optimization</h2>
-            <p className="mt-3 lora text-lg">
+            <p className="mt-3 lora text-lg text-(--text-color)">
               Improve your search engine rankings and drive organic traffic to
               your website.
             </p>
@@ -94,7 +93,7 @@ export default function About() {
               <MdOutlineDesignServices className="w-16 h-16 p-4 text-white bg-(--primary-color) rounded-2xl group-hover:scale-105 transition" />
             </span>
             <h2 className="text-2xl font-bold mt-6">Graphic Design</h2>
-            <p className="mt-3 lora text-lg">
+            <p className="mt-3 lora text-lg text-(--text-color)">
               Create stunning visuals that captivate your audience.
             </p>
           </div>
@@ -103,7 +102,7 @@ export default function About() {
               <FaCode className="w-16 h-16 p-4 text-white bg-(--primary-color) rounded-2xl group-hover:scale-105 transition" />
             </span>
             <h2 className="text-2xl font-bold mt-6">Web Development</h2>
-            <p className="mt-3 lora text-lg">
+            <p className="mt-3 lora text-lg text-(--text-color)">
               Create modern, responsive websites tailored to your business
               needs.
             </p>
@@ -113,7 +112,7 @@ export default function About() {
               <BsLayoutTextWindowReverse className="w-16 h-16 p-4 text-white bg-(--primary-color) rounded-2xl group-hover:scale-105 transition" />
             </span>
             <h2 className="text-2xl font-bold mt-6">Web Design</h2>
-            <p className="mt-3 lora text-lg">
+            <p className="mt-3 lora text-lg text-(--text-color)">
               Create stunning, user-friendly websites that leave a lasting
               impression.
             </p>
@@ -134,7 +133,7 @@ export default function About() {
                 <h4 className="text-xl font-semibold mb-3">
                   Fast & Reliable Service
                 </h4>
-                <p className="lora text-lg">
+                <p className="lora text-lg text-(--text-color)">
                   We understand the importance of timely delivery and
                   reliability in the digital world. Our team is dedicated to
                   providing fast and efficient services without compromising on
@@ -152,7 +151,7 @@ export default function About() {
                 <h4 className="text-xl font-semibold mb-3">
                   Client Satisfaction
                 </h4>
-                <p className="lora text-lg">
+                <p className="lora text-lg text-(--text-color)">
                   Our priority is to ensure our clients are completely satisfied
                   with the final product. We maintain open communication
                   throughout the development process to guarantee that your
@@ -170,7 +169,7 @@ export default function About() {
                 <h4 className="text-xl font-semibold mb-3">
                   Affordable Pricing
                 </h4>
-                <p className="lora text-lg">
+                <p className="lora text-lg text-(--text-color)">
                   We believe that quality web development should be accessible
                   to businesses of all sizes. That's why we offer competitive
                   pricing without compromising on the quality of our work.
@@ -187,7 +186,7 @@ export default function About() {
                 <h4 className="text-xl font-semibold mb-3">
                   Dedication Support
                 </h4>
-                <p className="lora text-lg">
+                <p className="lora text-lg text-(--text-color)">
                   Our commitment to our clients extends beyond project
                   completion. We offer ongoing support and maintenance to ensure
                   your website continues to perform optimally and remains
@@ -205,28 +204,6 @@ export default function About() {
             Hear from our satisfied clients about their experience working with
             us.
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-10">
-            <div className="bg-white p-6 rounded-lg shadow-md border-2 border-(--primary-color)/10">
-              <p className="lora text-lg">
-                "WebGrow transformed our online presence with a stunning website
-                and effective digital marketing strategies. Our traffic and
-                sales have significantly increased since working with them."
-              </p>
-              <h4 className="text-xl font-semibold mt-4">John Doe</h4>
-              <p className="text-sm text-gray-500">CEO, Example Company</p>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-md border-2 border-(--primary-color)/10">
-              <p className="lora text-lg">
-                "The team at WebGrow is incredibly talented and easy to work
-                with. They delivered our project on time and exceeded our
-                expectations. Highly recommend their services!"
-              </p>
-              <h4 className="text-xl font-semibold mt-4">Jane Smith</h4>
-              <p className="text-sm text-gray-500">
-                Marketing Manager, Sample Inc.
-              </p>
-            </div>
-          </div>
         </div>
         <div>
           <Swiper
@@ -245,7 +222,7 @@ export default function About() {
               clickable: true,
             }}
             modules={[Pagination]}
-            className="mySwiper"
+            className="mySwiper mt-10"
           >
             <SwiperSlide>
               <div className="flex flex-col justify-center text-center items-center p-6 rounded-lg shadow-md border-2 border-(--primary-color)/10 cursor-grab">
@@ -257,7 +234,7 @@ export default function About() {
                   />
                 </div>
                 <div className="mt-4">
-                  <p className="lora text-lg">
+                  <p className="lora text-lg text-(--text-color)">
                     "WebGrow's expertise in web development and digital
                     marketing has been instrumental in our business growth.
                     Their team is responsive, creative, and dedicated to
@@ -271,7 +248,7 @@ export default function About() {
                     <FaRegStar className="w-5 h-5"></FaRegStar>
                   </p>
                   <h4 className="text-xl font-semibold mt-4">Emily Johnson</h4>
-                  <p className="text-sm">Founder, Startup XYZ</p>
+                  <p className="text-sm text-(--text-color)">Founder, Startup XYZ</p>
                 </div>
               </div>
             </SwiperSlide>
@@ -285,9 +262,8 @@ export default function About() {
                   />
                 </div>
                 <div className="mt-4">
-                  <p className="lora text-lg">
-                    "WebGrow transformed our online presence with a stunning
-                    website and effective digital marketing strategies. Our
+                  <p className="lora text-lg text-(--text-color)">
+                    "WebGrow transformed our online presence with a stunning digital marketing strategies. Our
                     traffic and sales have significantly increased since working
                     with them."
                   </p>
@@ -299,7 +275,7 @@ export default function About() {
                     <FaStar className="w-5 h-5"></FaStar>
                   </p>
                   <h4 className="text-xl font-semibold mt-4">Michael Brown</h4>
-                  <p className="text-sm">CTO, Tech Solutions</p>
+                  <p className="text-sm text-(--text-color)">CTO, Tech Solutions</p>
                 </div>
               </div>
             </SwiperSlide>
@@ -307,13 +283,13 @@ export default function About() {
               <div className="flex flex-col justify-center text-center items-center p-6 rounded-lg shadow-md border-2 border-(--primary-color)/10 cursor-grab">
                 <div>
                   <img
-                    src="https://i.ibb.co.com/7tCznGSG/Whats-App-Image-2025-09-29-at-13-20-27-601f245b.jpg"
+                    src="https://i.ibb.co.com/bL4bRr6/pexels-olly-787942.jpg"
                     className="w-20 h-20 border-2 border-(--primary-color) rounded-full object-cover"
                     alt=""
                   />
                 </div>
                 <div className="mt-4">
-                  <p className="lora text-lg">
+                  <p className="lora text-lg text-(--text-color)">
                     "WebGrow's expertise in web development and digital
                     marketing has been instrumental in our business growth.
                     Their team is responsive, creative, and dedicated to
@@ -327,7 +303,7 @@ export default function About() {
                     <FaRegStar className="w-5 h-5"></FaRegStar>
                   </p>
                   <h4 className="text-xl font-semibold mt-4">Sarah Lee</h4>
-                  <p className="text-sm">Marketing Director, Creative Agency</p>
+                  <p className="text-sm text-(--text-color)">Marketing Director, Creative Agency</p>
                 </div>
               </div>
             </SwiperSlide>
@@ -335,13 +311,13 @@ export default function About() {
               <div className="flex flex-col justify-center text-center items-center p-6 rounded-lg shadow-md border-2 border-(--primary-color)/10 cursor-grab">
                 <div>
                   <img
-                    src="https://i.ibb.co.com/kpFhSxW/Shoriful-Islam-Siam.jpg"
+                    src="https://i.ibb.co.com/2NkZmNh/istockphoto-1364917563-612x612.jpg"
                     className="w-20 h-20 border-2 border-(--primary-color) rounded-full object-cover"
                     alt=""
                   />
                 </div>
                 <div className="mt-4">
-                  <p className="lora text-lg">
+                  <p className="lora text-lg text-(--text-color)">
                     "WebGrow's expertise in web development and digital
                     marketing has been instrumental in our business growth.
                     Their team is responsive, creative, and dedicated to
@@ -355,7 +331,7 @@ export default function About() {
                     <FaRegStar className="w-5 h-5"></FaRegStar>
                   </p>
                   <h4 className="text-xl font-semibold mt-4">David Kim</h4>
-                  <p className="text-sm">CEO, Startup Inc.</p>
+                  <p className="text-sm text-(--text-color)">CEO, Startup Inc.</p>
                 </div>
               </div>
             </SwiperSlide>

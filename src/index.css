@@ -20,10 +20,12 @@ body {
 
 :root {
   --primary-color: #9F62F2;
+  --text-color: #4b5563;
 }
 
 [data-theme="dark"] {
   --primary-color: #facc15;
+  --text-color: #b5b8bf;
 }
 
 .navlink-active,

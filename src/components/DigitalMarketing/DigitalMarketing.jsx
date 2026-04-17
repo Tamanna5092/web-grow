@@ -95,10 +95,12 @@ export default function DigitalMarketing() {
             >
               <Icon className="w-16 h-16 p-4 bg-(--primary-color) text-white rounded-lg" />
               <h2 className="text-2xl font-bold mt-6">{service.title}</h2>
-              <p className=" mt-4 lora text-lg">{service.description}</p>
+              <p className=" mt-4 lora text-lg text-(--text-color)">
+                {service.description}
+              </p>
               <ul className="mt-4 space-y-2">
                 {service.features.map((feature, index) => (
-                  <li key={index} className="flex items-center gap-2">
+                  <li key={index} className="flex items-center text-(--text-color) gap-2">
                     <FaCheckCircle className="w-4 h-4 text-(--primary-color)" />
                     {feature}
                   </li>

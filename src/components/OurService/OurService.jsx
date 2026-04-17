@@ -20,12 +20,12 @@ export default function OurService() {
         </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 my-10 px-4 md:px-0">
-        <div className="flex flex-col justify-center items-center hover:bg-(--primary-color) hover:text-white transition duration-300 p-10 border-2 border-(--primary-color) rounded-lg box-shadow-custom">
+        <div className="flex flex-col justify-center items-center group hover:bg-(--primary-color) hover:text-white transition duration-300 p-10 border-2 border-(--primary-color) rounded-lg box-shadow-custom">
           <span>
             <MdOutlineCampaign className="w-16 h-16" />
           </span>
           <h2 className="text-2xl font-bold mt-6">Digital Marketing</h2>
-          <p className="text-center mt-4 lora text-lg">
+          <p className="text-center mt-4 lora text-lg group-hover:text-white">
             We provide comprehensive digital marketing services, including SEO,
             social media marketing, and PPC advertising, to help you reach your
             target audience effectively.
@@ -34,12 +34,12 @@ export default function OurService() {
             <FaArrowRightLong className="w-6 h-6" />
           </Link>
         </div>
-        <div className="flex flex-col justify-center items-center hover:bg-(--primary-color) hover:text-white transition duration-300 p-10 border-2 border-(--primary-color) rounded-lg box-shadow-custom">
+        <div className="flex flex-col justify-center items-center group hover:bg-(--primary-color) hover:text-white transition duration-300 p-10 border-2 border-(--primary-color) rounded-lg box-shadow-custom">
           <span>
             <BsLayoutTextWindowReverse className="w-16 h-16" />
           </span>
           <h2 className="text-2xl font-bold mt-6">Web Development</h2>
-          <p className="text-center mt-4 lora text-lg">
+          <p className="text-center mt-4 lora text-lg text-(--text-color) group-hover:text-white">
             We create modern, responsive websites tailored to your business
             needs.
           </p>
@@ -47,12 +47,12 @@ export default function OurService() {
             <FaArrowRightLong className="w-6 h-6" />
           </Link>
         </div>
-        <div className="flex flex-col justify-center items-center hover:bg-(--primary-color) hover:text-white transition duration-300 p-10 border-2 border-(--primary-color) rounded-lg box-shadow-custom">
+        <div className="flex flex-col justify-center items-center group hover:bg-(--primary-color) hover:text-white transition duration-300 p-10 border-2 border-(--primary-color) rounded-lg box-shadow-custom">
           <span>
             <MdOutlineDesignServices className="w-16 h-16" />
           </span>
           <h2 className="text-2xl font-bold mt-6">Graphic Design</h2>
-          <p className="text-center mt-4 lora text-lg">
+          <p className="text-center mt-4 lora text-lg text-(--text-color) group-hover:text-white">
             We create modern, responsive websites tailored to your business
             needs.
           </p>
