@@ -28,7 +28,7 @@ import { FaRegEye } from "react-icons/fa";
 export default function About() {
   return (
     <div>
-      <div className="relative w-full h-150 md:h-175 px-2 md:px-0">
+      <div className="relative w-full h-150 md:h-96 px-2 md:px-0">
         <img className="w-full h-full object-cover" src={about} alt="Banner" />
         <div className="absolute inset-0 bg-black/60"></div>
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center w-full px-6">

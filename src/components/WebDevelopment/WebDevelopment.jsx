@@ -85,7 +85,7 @@ export default function WebDevelopment() {
                 ))}
               </ul>
               <Link
-                to={`/services/${service.slug}`}
+                to={`/services/web-development/service-details/${service.slug}`}
                 className="w-full flex justify-center items-center gap-2 group-hover:gap-4 mt-6 btn-primary-custom "
               >
                 See Details
