@@ -9,6 +9,7 @@ import Contact from "../pages/Contact/Contact";
 import WebDevelopment from "../components/WebDevelopment/WebDevelopment";
 import DigitalMarketing from "../components/DigitalMarketing/DigitalMarketing";
 import ServiceDetails from "../pages/ServiceDetails/ServiceDetails";
+import TeamMemberDetails from "../pages/TeamMemberDetails/TeamMemberDetails";
 
 const Route = createBrowserRouter([
   {
@@ -29,6 +30,7 @@ const Route = createBrowserRouter([
       },
       { path: "projects", Component: Projects },
       { path: "contact", Component: Contact },
+      { path: "team-member/:slug", Component: TeamMemberDetails },
     ],
   },
 ]);
