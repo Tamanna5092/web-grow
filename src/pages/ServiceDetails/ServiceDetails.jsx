@@ -1,4 +1,4 @@
-import { useParams } from "react-router";
+import { Link, useParams } from "react-router";
 import WebDevelopment from "../../utilities/webDevelopment";
 import DigitalMarketing from "../../utilities/digitalMarketing";
 import image from "../../assets/background.jpg";
@@ -47,7 +47,11 @@ export default function ServiceDetails() {
                   key={index}
                   className="flex items-center text-(--text-color) gap-2"
                 >
-                  <FaCheckCircle className="w-4 h-4 text-(--primary-color)" />
+                  <FaCheckCircle
+                    className="w-4 h-4 text-(--primary-color)"
+                    data-aos="fade-right"
+                    data-aos-duration="1000"
+                  />
                   {feature}
                 </li>
               ))}
@@ -63,7 +67,11 @@ export default function ServiceDetails() {
                   key={index}
                   className="flex items-center text-(--text-color) gap-2"
                 >
-                  <FaChartLine className="w-4 h-4 text-(--primary-color)" />
+                  <FaChartLine
+                    className="w-4 h-4 text-(--primary-color)"
+                    data-aos="fade-right"
+                    data-aos-duration="1000"
+                  />
                   {feature}
                 </li>
               ))}
@@ -79,7 +87,11 @@ export default function ServiceDetails() {
                   key={index}
                   className="flex items-center text-(--text-color) gap-2"
                 >
-                  <FaArrowRightLong className="w-4 h-4 text-(--primary-color)" />
+                  <FaArrowRightLong
+                    className="w-4 h-4 text-(--primary-color)"
+                    data-aos="fade-right"
+                    data-aos-duration="1000"
+                  />
                   {feature}
                 </li>
               ))}
@@ -94,7 +106,11 @@ export default function ServiceDetails() {
             </p>
           </div>
         )}
-        <button className="btn-primary-custom mt-4">Get Started</button>
+        <div className="mt-6">
+          <Link to={"/contact"} className="btn-primary-custom">
+            Get Started
+          </Link>
+        </div>
       </div>
     </div>
   );

@@ -1,19 +1,46 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import { FaRegHandPointRight } from "react-icons/fa6";
 import {
   IoCallOutline,
   IoLocationOutline,
   IoMailOutline,
 } from "react-icons/io5";
+import emailjs from "@emailjs/browser";
+import toast from "react-hot-toast";
+import { TbFidgetSpinner } from "react-icons/tb";
+import { IoIosSend } from "react-icons/io";
 
 export default function Contact() {
+  const form = useRef();
+  const [loading, setLoading] = useState(false);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    emailjs
+      .sendForm("service_89awm2h", "template_lg6qzkp", form.current, {
+        publicKey: "C1LB4sf41D8cJFjTP",
+      })
+      .then(
+        () => {
+          toast.success("Message sent successfully!");
+          form.current.reset();
+          setLoading(false);
+        },
+        (error) => {
+          toast.error("FAILED...", error.text);
+          setLoading(false);
+        },
+      );
+  };
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-7xl mx-auto my-10 px-4 md:px-0">
-      <div>
+      <div data-aos="fade-right" data-aos-duration="1000">
         <h3 className="text-2xl md:text-3xl font-bold text-(--primary-color) w-fit border-b-2 border-(--primary-color) mb-10">
           Contact Us
         </h3>
-        <p className="lora text-lg text-(--text-color) mb-6">
+        <p className="lora text-xl text-(--text-color) mb-6">
           Whether you need a website or digital marketing services, we are here
           to help. Get in touch with us and let's build something amazing
           together.
@@ -25,8 +52,8 @@ export default function Contact() {
               <IoCallOutline className="w-10 h-10 p-2" />
             </span>
             <div>
-              <p className="lora text-lg text-(--text-color)">
-                +8801982845092
+              <p className="lora text-xl text-(--text-color)">
+                +8801794607164, +8801982845092
               </p>
             </div>
           </div>
@@ -36,8 +63,8 @@ export default function Contact() {
               <IoMailOutline className="w-10 h-10 p-2" />
             </span>
             <div>
-              <p className="lora text-lg text-(--text-color)">
-                webgrow@company.com
+              <p className="lora text-xl text-(--text-color)">
+                sharifulislamsiam06@gmail.com
               </p>
             </div>
           </div>
@@ -47,13 +74,13 @@ export default function Contact() {
               <IoLocationOutline className="w-10 h-10 p-2" />
             </span>
             <div>
-              <p className="lora text-lg text-(--text-color)">
+              <p className="lora text-xl text-(--text-color)">
                 Kishoreganj, Dhaka, Bangladesh
               </p>
             </div>
           </div>
         </div>
-        <div className="flex gap-2 items-center lora text-lg mt-6">
+        <div className="flex gap-2 items-center lora text-xl mt-6">
           <span>
             <FaRegHandPointRight className="text-(--primary-color)" />
           </span>
@@ -72,27 +99,23 @@ export default function Contact() {
           </h3>
           <div className="max-w-sm bg-(--primary-color)/10 p-4 rounded-lg space-y-4">
             <div className="flex items-center justify-between">
-              <p>Monday: Friday:</p>
-              <p>9:00 AM - 6:00 PM</p>
+              <p>Sunday - Saturday:</p>
+              <p>24/7 Hours</p>
             </div>
             <div className="flex items-center justify-between">
-              <p>Saturday:</p>
-              <p>10:00 AM - 4:00 PM</p>
-            </div>
-            <div className="flex items-center justify-between">
-              <p>Sunday:</p>
+              <p>Friday: 12:00 PM - 3:00 PM</p>
               <p>Closed</p>
             </div>
           </div>
         </div>
       </div>
-      <div>
+      <div data-aos="fade-left" data-aos-duration="1000">
         <h3 className="text-2xl md:text-3xl font-bold text-(--primary-color) w-fit border-b-2 border-(--primary-color) mb-10">
           Get In Touch
         </h3>
 
         <div className="">
-          <form>
+          <form ref={form} onSubmit={sendEmail}>
             <div className="space-y-4">
               <div className="">
                 <input
@@ -138,8 +161,27 @@ export default function Contact() {
                 ></textarea>
               </div>
               <div className="flex justify-center">
-                <button type="submit" className="btn-primary-custom">
-                  Send Message
+                <button
+                  disabled={loading}
+                  type="submit"
+                  className="flex justify-center items-center gap-2 btn-primary-custom"
+                >
+                  {loading ? (
+                    <>
+                      {" "}
+                      <span>
+                        <TbFidgetSpinner className="animate-spin" />
+                      </span>{" "}
+                      Loading...
+                    </>
+                  ) : (
+                    <>
+                      <span>
+                        <IoIosSend />
+                      </span>
+                      Send Message
+                    </>
+                  )}
                 </button>
               </div>
             </div>

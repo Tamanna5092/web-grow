@@ -5,7 +5,7 @@ import { TiWeatherSunny } from "react-icons/ti";
 import { Link, NavLink } from "react-router";
 
 export default function Navbar() {
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState("dark");
   const [openMenu, setOpenMenu] = useState(false);
 
   const handleOpenMenu = () => {
@@ -21,7 +21,7 @@ export default function Navbar() {
   }, []);
 
   const handleThemeToggle = () => {
-    const newTheme = theme === "light" ? "dark" : "light";
+    const newTheme = theme === "dark" ? "light" : "dark";
     setTheme(newTheme);
     document.documentElement.setAttribute("data-theme", newTheme);
     localStorage.setItem("theme", newTheme);
@@ -101,7 +101,7 @@ export default function Navbar() {
             isActive ? "navlink-active" : "navlink-inactive"
           }
         >
-          Projects
+          Portfolio
         </NavLink>
       </li>
       <li>
@@ -125,7 +125,7 @@ export default function Navbar() {
           <div>
             <Link
               to={"/"}
-              className={`text-xl font-bold text-(--primary-color)`}
+              className={`text-4xl font-bold text-(--primary-color)`}
             >
               WebGrow
             </Link>

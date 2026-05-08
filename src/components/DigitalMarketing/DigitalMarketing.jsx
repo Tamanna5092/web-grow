@@ -6,7 +6,11 @@ import digitalMarketingServices from "../../utilities/digitalMarketing";
 export default function DigitalMarketing() {
   return (
     <div className="max-w-7xl mx-auto">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 my-20 px-4 md:px-0">
+      <div
+        className="grid grid-cols-1 md:grid-cols-3 gap-8 my-20 px-4 md:px-0"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         {digitalMarketingServices.map((service) => {
           const Icon = service.icon;
           return (

@@ -34,7 +34,11 @@ export default function FAQ() {
 
   return (
     <div className="my-20 grid grid-cols-1 md:grid-cols-2 gap-6 px-4 md:px-0">
-      <div>
+      <div
+        data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"
+      >
         <div>
           <p className="lora bg-(--primary-color) text-white py-2 px-6 rounded-full w-fit">
             FAQ
@@ -68,7 +72,12 @@ export default function FAQ() {
           ))}
         </div>
       </div>
-      <div>
+      <div
+        data-aos="fade-left"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"
+        data-aos-duration="1000"
+      >
         <img className="w-full h-full" src={faqimg} alt="FAQ" />
       </div>
     </div>

@@ -21,13 +21,17 @@ export default function TeamMemberDetails() {
   }
 
   return (
-    <div className="max-w-7xl mx-auto my-10">
-      <div className="grid grid-cols-1 gap-6  px-4 md:px-0  md:grid-cols-3">
-        <div className="col-span-2 md:order-1">
+    <div className="max-w-7xl mx-auto my-10 px-4 md:px-0">
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+        <div className="col-span-2 order-2 md:order-1">
           <h1 className="font-lato text-3xl text-(--primary-color) font-extrabold md:text-5xl">
             {member.name}
           </h1>
-          <p className="text-lg text-(--text-color) font-semibold mt-2">
+          <p
+            className="text-2xl text-(--text-color) font-semibold mt-2"
+            data-aos="zoom-out"
+            data-aos-duration="1000"
+          >
             {member.role}
           </p>
           <p className="text-xl font-medium mt-4">Work Experience:</p>
@@ -38,9 +42,11 @@ export default function TeamMemberDetails() {
             <li>
               <strong>Years Active:</strong> {member.experience}
             </li>
-            <li>
-              <strong>skills:</strong> {member.skills.join(", ")}
-            </li>
+            {member.skills && (
+              <li>
+                <strong>Skills:</strong> {member?.skills?.join(", ")}
+              </li>
+            )}
           </ul>
           <p className=" text-xl font-medium mt-6">About Me:</p>
           <p className="text-(--text-color) mt-2 md:mr-4">{member.about}</p>
@@ -51,26 +57,36 @@ export default function TeamMemberDetails() {
                 key={index}
                 className="flex items-center text-(--text-color) gap-2"
               >
-                <VscTools className="w-4 h-4 text-(--primary-color)" />
+                <VscTools
+                  className="w-4 h-4 text-(--primary-color)"
+                  data-aos="fade-right"
+                  data-aos-duration="1000"
+                />
                 {spec}
               </li>
             ))}
           </ul>
         </div>
-        <div className="col-span-1 md:order-2">
+        <div
+          className="col-span-1 order-1 md:order-2"
+          data-aos="fade-left"
+          data-aos-duration="2000"
+        >
           <img
-            className="md:h-100 w-full object-cover bg-(--primary-color)/80 p-4 hover:bg-(--secondary-color) hover:scale-105 duration-500 hover:brightness-75 animate__animated animate__fadeInRight"
+            className="h-80 md:h-100 w-full object-cover bg-(--primary-color)/80 p-4 hover:bg-(--secondary-color) hover:scale-105 duration-500 hover:brightness-75 animate__animated animate__fadeInRight"
             src={member.image}
             alt={member.name}
           />
           <div className="flex justify-center pt-4 space-x-4 align-center">
-            {member.socialLinks?.map((link) => (
+            {member.socialLinks?.map((link, index) => (
               <a
                 key={link.name}
                 rel="noopener noreferrer"
                 href={link.url}
                 aria-label={link.name}
                 className="p-2 rounded-md bg-(--primary-color) hover:bg-(--primary-color)/80 transition duration-300"
+                data-aos="fade-up"
+                data-aos-delay={index * 100}
               >
                 <link.icon className="w-5 h-5 text-white" />
               </a>
@@ -78,11 +94,9 @@ export default function TeamMemberDetails() {
           </div>
         </div>
       </div>
-      <div className="mx-4 md:mx-0">
-        <p className="text-(--text-color) mt-10">
-          <strong>About My Work and Skills:</strong> {member.description}
-        </p>
-      </div>
+      <p className="text-(--text-color) mt-10">
+        <strong>About My Work and Skills:</strong> {member.description}
+      </p>
     </div>
   );
 }

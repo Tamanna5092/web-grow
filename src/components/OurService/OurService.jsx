@@ -7,20 +7,23 @@ import { Link } from "react-router";
 export default function OurService() {
   return (
     <div className="my-20">
-      <div>
+      <div data-aos="zoom-in-down" data-aos-duration="1000">
         <p className="text-center lora text-lg text-(--primary-color)">
           What we do
         </p>
         <h1 className="text-3xl md:text-5xl font-extrabold text-center">
           Our Services
         </h1>
-        <p className="text-center mt-4 lora text-lg px-4 md:px-0">
+        <p className="md:max-w-3xl text-center mx-auto mt-4 lora text-2xl px-4 md:px-0">
           We offer a wide range of web development and digital marketing
           services to help your business grow online. Our services include:
         </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 my-10 px-4 md:px-0">
-        <div className="flex flex-col justify-center items-center group hover:bg-(--primary-color) hover:text-white transition duration-300 p-10 border-2 border-(--primary-color) rounded-lg box-shadow-custom">
+        <div
+          className="flex flex-col justify-center items-center group hover:bg-(--primary-color) hover:text-white transition duration-300 p-10 border-2 border-(--primary-color) rounded-lg box-shadow-custom"
+          data-aos="zoom-in"
+        >
           <span>
             <MdOutlineCampaign className="w-16 h-16" />
           </span>
@@ -34,7 +37,11 @@ export default function OurService() {
             <FaArrowRightLong className="w-6 h-6" />
           </Link>
         </div>
-        <div className="flex flex-col justify-center items-center group hover:bg-(--primary-color) hover:text-white transition duration-300 p-10 border-2 border-(--primary-color) rounded-lg box-shadow-custom">
+        <div
+          className="flex flex-col justify-center items-center group hover:bg-(--primary-color) hover:text-white transition duration-300 p-10 border-2 border-(--primary-color) rounded-lg box-shadow-custom"
+          data-aos="zoom-in"
+          data-aos-delay="200"
+        >
           <span>
             <BsLayoutTextWindowReverse className="w-16 h-16" />
           </span>
@@ -47,7 +54,11 @@ export default function OurService() {
             <FaArrowRightLong className="w-6 h-6" />
           </Link>
         </div>
-        <div className="flex flex-col justify-center items-center group hover:bg-(--primary-color) hover:text-white transition duration-300 p-10 border-2 border-(--primary-color) rounded-lg box-shadow-custom">
+        <div
+          className="flex flex-col justify-center items-center group hover:bg-(--primary-color) hover:text-white transition duration-300 p-10 border-2 border-(--primary-color) rounded-lg box-shadow-custom"
+          data-aos="zoom-in"
+          data-aos-delay="400"
+        >
           <span>
             <MdOutlineDesignServices className="w-16 h-16" />
           </span>

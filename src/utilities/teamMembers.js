@@ -14,45 +14,42 @@ const teamMembers = [
     name: "Shariful Islam Siam",
     role: "Digital Marketer & SEO Expert",
     slug: "shariful-islam-siam",
-    image: "https://i.ibb.co.com/kpFhSxW/Shoriful-Islam-Siam.jpg",
+    image:
+      "https://i.ibb.co.com/YFQ1Rj74/Shoriful-Islam-Siam-Digital-Marketer.jpg",
 
     about:
       "I am a passionate and dedicated digital marketing professional who loves exploring new strategies in online growth and business development. I am currently a student pursuing a BBA in Accounting (Honours), 2nd year. Alongside my academic journey, I am actively developing my skills in SEO and digital marketing to build a strong career in this field.",
 
     description:
-      "I specialize in SEO, Google Ads, keyword research, and performance-based marketing campaigns. My approach is focused on understanding business goals and creating data-driven strategies that deliver measurable results. I conduct in-depth keyword analysis, optimize website structure, and implement both on-page and off-page SEO techniques to improve search engine rankings. I create and manage high-performing Google Ads campaigns that target the right audience and maximize return on investment. I continuously monitor performance, analyze data, and optimize campaigns to ensure consistent growth. My goal is to help businesses increase their online visibility, drive high-quality traffic, and generate leads that convert into long-term customers",
+      "I specialize in SEO, Google Ads, keyword research, and performance-driven digital marketing campaigns. My focus is on understanding business objectives and building data-backed strategies that deliver measurable growth. I perform in-depth keyword analysis, optimize website structure, and implement effective on-page and off-page SEO techniques to improve search engine rankings. I also create and manage high-performing Google Ads campaigns that target the right audience and maximize return on investment. By continuously monitoring performance, analyzing data, and optimizing campaigns, I ensure consistent improvement and long-term results. My goal is to help businesses increase their online visibility, attract quality traffic, and convert leads into loyal customers.",
 
     specialization: [
-      "Search Engine Optimization (SEO)",
-      "Google Ads Campaigns",
       "Keyword Research",
+      "YouTube Video SEO",
+      "Social Media Ads Campaigns",
+      "Social Medial Management",
       "Analytics & Reporting",
+      "Google Ads Campaigns",
+      "YouTube Video Promotion By Google Ads",
     ],
 
-    skills: ["SEO", "Google Ads", "Analytics", "Keyword Research"],
-
-    experience: "3+ Years",
-    startWork: "2022",
+    experience: "4+ Years",
+    startWork: "2021",
 
     socialLinks: [
       {
         name: "email",
-        url: "mailto:sismarketingagencybd@gmail.com",
+        url: "mailto:sharifulislamsiam06@gmail.com",
         icon: IoMdMail,
       },
       {
         name: "facebook",
-        url: "https://www.facebook.com/sismarketingagencybd",
+        url: "https://www.facebook.com/shariful.islam.siam.2024",
         icon: FaFacebook,
       },
       {
-        name: "youtube",
-        url: "https://www.youtube.com/@sismarketingagency",
-        icon: FaYoutube,
-      },
-      {
         name: "instagram",
-        url: "https://www.instagram.com/bdsismarketingagency2003/",
+        url: "https://www.instagram.com/sharifulislamsiam003/",
         icon: FaInstagram,
       },
     ],
@@ -109,6 +106,57 @@ const teamMembers = [
         name: "twitter",
         url: "https://x.com/tamanna_51?s=09",
         icon: FaTwitter,
+      },
+    ],
+  },
+  {
+    id: 3,
+    name: "Anik Jaman",
+    role: "Graphic Designer",
+    slug: "anik-jaman",
+    image: "https://i.ibb.co.com/Y4ct7ydv/Anik-Jaman.jpg",
+
+    about:
+      "I am a dedicated graphic designer with a strong interest in creating clean, modern, and engaging visual designs. Alongside my academic journey in BBA Management (Honours), I continuously explore new design trends and improve my creative skills to produce impactful visual content for brands and businesses",
+
+    description:
+      "My work focuses on transforming ideas into visually compelling designs that communicate clearly and leave a lasting impression. From brand identity design to social media graphics and digital content, I aim to create designs that are both creative and strategically effective. With experience in tools like Photoshop, Illustrator, InDesign, and Figma, I enjoy combining creativity, typography, color theory, and layout principles to build professional and engaging visuals tailored to each client's goals and audience. My design process involves understanding the client's vision, researching the target audience, and crafting unique visual solutions that align with business goals. I specialize in creating compelling brand identities, designing engaging digital graphics for social media and marketing campaigns, and developing visually appealing layouts for websites and print materials. My goal is to deliver high-quality designs that not only look great but also effectively communicate the brand's message and values.",
+
+    specialization: [
+      "Graphic Design",
+      "Logo Design",
+      "Banner Design",
+      "Cover Design",
+      "Product Branding",
+      "Poster Design",
+      "Flyer Design",
+      "Illustration",
+      "Presentation Design",
+      "Mockup Design",
+      "3D Artwork",
+      "Brand Identity",
+    ],
+
+    skills: ["Photoshop", "Illustrator", "Figma"],
+
+    experience: "2+ Years",
+    startWork: "2023",
+
+    socialLinks: [
+      {
+        name: "email",
+        url: "mailto:anikjaman727@gmail.com",
+        icon: IoMdMail,
+      },
+      {
+        name: "facebook",
+        url: "https://www.facebook.com/anik.jaman.3766",
+        icon: FaFacebook,
+      },
+      {
+        name: "instagram",
+        url: "https://www.instagram.com/anik__jaman",
+        icon: FaInstagram,
       },
     ],
   },

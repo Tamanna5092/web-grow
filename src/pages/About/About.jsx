@@ -1,7 +1,6 @@
 import React from "react";
 import about from "../../assets/aboutUs.avif";
 import { SlEnergy } from "react-icons/sl";
-import group from "../../assets/group-members.jpg";
 import {
   FaChartLine,
   FaCode,
@@ -24,145 +23,132 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { GoGoal } from "react-icons/go";
 import { FaRegEye } from "react-icons/fa";
+import { SiGoogleads, SiTiktok } from "react-icons/si";
 
 export default function About() {
+  const whatWeOffer = [
+    {
+      id: 1,
+      title: "Social Media Management",
+      description:
+        "Manage your social media presence and engage with your audience effectively.",
+      icon: TfiLayoutMediaCenterAlt,
+    },
+    {
+      id: 2,
+      title: "Facebook & Instagram Ads Campaign",
+      description: "Boost your brand with smart digital marketing solutions.",
+      icon: MdOutlineCampaign,
+    },
+    {
+      id: 3,
+      title: "Google Ads Campaign",
+      description:
+        "Reach more customers and maximize your online visibility with Google Ads.",
+      icon: SiGoogleads,
+    },
+    {
+      id: 4,
+      title: "TikTok Ads Campaign",
+      description:
+        "Create engaging TikTok campaigns that drive traffic and conversions.",
+      icon: SiTiktok,
+    },
+    {
+      id: 5,
+      title: "SEO Optimization",
+      description:
+        "Improve your search engine rankings and drive organic traffic to your website.",
+      icon: FaChartLine,
+    },
+    {
+      id: 6,
+      title: "Graphic Design",
+      description: "Create stunning visuals that captivate your audience.",
+      icon: MdOutlineDesignServices,
+    },
+    {
+      id: 7,
+      title: "Web Development",
+      description:
+        "Create modern, responsive websites tailored to your business needs.",
+      icon: FaCode,
+    },
+    {
+      id: 8,
+      title: "Web Design",
+      description:
+        "Create stunning, user-friendly websites that leave a lasting impression.",
+      icon: BsLayoutTextWindowReverse,
+    },
+  ];
+
   return (
     <div>
       <div className="relative w-full h-150 md:h-96 px-2 md:px-0">
         <img className="w-full h-full object-cover" src={about} alt="Banner" />
         <div className="absolute inset-0 bg-black/60"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center w-full px-6">
+        <div
+          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center w-full px-6"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
           <h1 className="text-5xl font-extrabold text-center">About WebGrow</h1>
-          <p className="text-center lora mt-4 text-lg">
+          <p className="text-center lora mt-4 text-2xl md:text-4xl">
             We build modern websites and deliver result-driven digital marketing
             solutions to help your business grow faster online.
           </p>
         </div>
       </div>
       <div className="max-w-7xl mx-auto my-10 md:px-0 px-4">
-        <div className="my-10">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mt-10 mb-6">
-            Our Story
-          </h2>
-          <p className="lora text-lg text-(--text-color) text-center max-w-4xl mx-auto">
-            At WebGrow, we are passionate about helping businesses thrive in the
-            digital landscape. Our journey began with a simple mission: to
-            provide high-quality web development and digital marketing services
-            that empower businesses to grow and succeed online. With a team of
-            experienced professionals, we have successfully delivered numerous
-            projects across various industries, earning the trust and
-            satisfaction of our clients.
-          </p>
-          <div className="mt-6">
-            <img className="w-full brightness-75" src={group} alt="" />
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="flex flex-col bg-(--primary-color)/10 p-6 rounded-b-2xl hover:shadow-xl transition duration-300">
-              <p className="flex items-center gap-2 lora bg-(--primary-color) text-white py-2 px-4 rounded-full w-fit">
-                <span>
-                  <GoGoal />{" "}
-                </span>
-                Our Mission
-              </p>
-              <h4 className="text-2xl font-bold mt-6">
-                Helping businesses grow online world wide
-              </h4>
-              <p className="mt-3 lora text-lg text-(--text-color)">
-                Our mission is to help businesses grow by delivering modern,
-                high-quality websites and result-driven digital marketing
-                solutions that create real impact.
-              </p>
-            </div>
-            <div className="flex flex-col bg-(--primary-color)/10 p-6 rounded-b-2xl hover:shadow-xl transition duration-300">
-              <p className="flex items-center gap-2 lora bg-(--primary-color) text-white py-2 px-4 rounded-full w-fit">
-                <span>
-                  <FaRegEye />{" "}
-                </span>
-                Our Vision
-              </p>
-              <h4 className="text-2xl font-bold mt-6">
-                We aim to become a trusted digital partner
-              </h4>
-              <p className="mt-3 lora text-lg text-(--text-color)">
-                Our vision is to become a trusted digital partner, empowering
-                businesses worldwide with innovative solutions and long-term
-                success.
-              </p>
-            </div>
-          </div>
-        </div>
-        <p className="text-center lora text-lg text-(--primary-color) mb-2">
+        <p
+          className="text-center lora text-lg text-(--primary-color) mb-2"
+          data-aos="zoom-in-down"
+          data-aos-duration="1000"
+        >
           Our Services
         </p>
-        <h2 className="text-3xl md:text-5xl font-extrabold text-center">
+        <h2
+          className="text-3xl md:text-5xl font-extrabold text-center"
+          data-aos="zoom-in-down"
+          data-aos-duration="1000"
+        >
           What We Offer
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 my-10">
-          <div className="flex flex-col group hover:bg-(--primary-color)/10 transition duration-300 p-6 border-2 border-(--primary-color)/50 shadow-lg rounded-lg box-shadow-custom">
-            <span className="">
-              <MdOutlineCampaign className="w-16 h-16 p-4 text-white bg-(--primary-color) rounded-2xl group-hover:scale-105 transition" />
-            </span>
-            <h2 className="text-2xl font-bold mt-6">Digital Marketing</h2>
-            <p className="mt-3 lora text-lg text-(--text-color)">
-              Boost your brand with smart digital marketing solutions.
-            </p>
-          </div>
-          <div className="flex flex-col group hover:bg-(--primary-color)/10 transition duration-300 p-6 border-2 border-(--primary-color)/50 shadow-lg rounded-lg box-shadow-custom">
-            <span className="">
-              <TfiLayoutMediaCenterAlt className="w-16 h-16 p-4 text-white bg-(--primary-color) rounded-2xl group-hover:scale-105 transition" />
-            </span>
-            <h2 className="text-2xl font-bold mt-6">Social Media Management</h2>
-            <p className="mt-3 lora text-lg text-(--text-color)">
-              Manage your social media presence and engage with your audience
-              effectively.
-            </p>
-          </div>
-          <div className="flex flex-col group hover:bg-(--primary-color)/10 transition duration-300 p-6 border-2 border-(--primary-color)/50 shadow-lg rounded-lg box-shadow-custom">
-            <span className="">
-              <FaChartLine className="w-16 h-16 p-4 text-white bg-(--primary-color) rounded-2xl group-hover:scale-105 transition" />
-            </span>
-            <h2 className="text-2xl font-bold mt-6">SEO Optimization</h2>
-            <p className="mt-3 lora text-lg text-(--text-color)">
-              Improve your search engine rankings and drive organic traffic to
-              your website.
-            </p>
-          </div>
-          <div className="flex flex-col group hover:bg-(--primary-color)/10 transition duration-300 p-6 border-2 border-(--primary-color)/50 shadow-lg rounded-lg box-shadow-custom">
-            <span className="">
-              <MdOutlineDesignServices className="w-16 h-16 p-4 text-white bg-(--primary-color) rounded-2xl group-hover:scale-105 transition" />
-            </span>
-            <h2 className="text-2xl font-bold mt-6">Graphic Design</h2>
-            <p className="mt-3 lora text-lg text-(--text-color)">
-              Create stunning visuals that captivate your audience.
-            </p>
-          </div>
-          <div className="flex flex-col group hover:bg-(--primary-color)/10 transition duration-300 p-6 border-2 border-(--primary-color)/50 shadow-lg rounded-lg box-shadow-custom">
-            <span className="">
-              <FaCode className="w-16 h-16 p-4 text-white bg-(--primary-color) rounded-2xl group-hover:scale-105 transition" />
-            </span>
-            <h2 className="text-2xl font-bold mt-6">Web Development</h2>
-            <p className="mt-3 lora text-lg text-(--text-color)">
-              Create modern, responsive websites tailored to your business
-              needs.
-            </p>
-          </div>
-          <div className="flex flex-col group hover:bg-(--primary-color)/10 transition duration-300 p-6 border-2 border-(--primary-color)/50 shadow-lg rounded-lg box-shadow-custom">
-            <span className="">
-              <BsLayoutTextWindowReverse className="w-16 h-16 p-4 text-white bg-(--primary-color) rounded-2xl group-hover:scale-105 transition" />
-            </span>
-            <h2 className="text-2xl font-bold mt-6">Web Design</h2>
-            <p className="mt-3 lora text-lg text-(--text-color)">
-              Create stunning, user-friendly websites that leave a lasting
-              impression.
-            </p>
-          </div>
+        <div
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 my-10"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
+          {whatWeOffer.map((service) => {
+            const Icon = service.icon;
+            return (
+              <div
+                key={service.id}
+                className="flex flex-col group hover:bg-(--primary-color)/10 transition duration-300 p-6 border-2 border-(--primary-color)/50 shadow-lg rounded-lg box-shadow-custom"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay={service.id * 100}
+              >
+                <Icon className="w-16 h-16 p-4 text-white bg-(--primary-color) rounded-2xl group-hover:scale-105 transition" />
+                <h2 className="text-2xl font-bold mt-6">{service.title}</h2>
+                <p className="mt-3 lora text-lg text-(--text-color)">
+                  {service.description}
+                </p>
+              </div>
+            );
+          })}
         </div>
         <div className="my-10">
           <h2 className="text-3xl md:text-5xl font-extrabold text-center mt-10 mb-6">
             Why Choose Us
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-10">
-            <div className="group flex flex-col md:flex-row gap-4 bg-(--primary-color)/10 p-6 rounded-lg shadow-md border-2 border-(--primary-color)/10 hover:border-(--primary-color) transition duration-300">
+            <div
+              className="group flex flex-col md:flex-row gap-4 bg-(--primary-color)/10 p-6 rounded-lg shadow-md border-2 border-(--primary-color)/10 hover:border-(--primary-color) transition duration-300"
+              data-aos="fade-right"
+              data-aos-duration="2000"
+            >
               <div className="">
                 <span className="">
                   <SlEnergy className="w-16 h-16 p-4 text-white bg-(--primary-color) rounded-2xl group-hover:rotate-12 transition" />
@@ -180,7 +166,11 @@ export default function About() {
                 </p>
               </div>
             </div>
-            <div className="group flex flex-col md:flex-row gap-4 bg-(--primary-color)/10 p-6 rounded-lg shadow-md border-2 border-(--primary-color)/10 hover:border-(--primary-color) transition duration-300">
+            <div
+              className="group flex flex-col md:flex-row gap-4 bg-(--primary-color)/10 p-6 rounded-lg shadow-md border-2 border-(--primary-color)/10 hover:border-(--primary-color) transition duration-300"
+              data-aos="fade-left"
+              data-aos-duration="2000"
+            >
               <div className="">
                 <span className="">
                   <FaRegFaceSmile className="w-16 h-16 p-4 text-white bg-(--primary-color) rounded-2xl group-hover:rotate-12 transition" />
@@ -198,7 +188,11 @@ export default function About() {
                 </p>
               </div>
             </div>
-            <div className="group flex flex-col md:flex-row gap-4 bg-(--primary-color)/10 p-6 rounded-lg shadow-md border-2 border-(--primary-color)/10 hover:border-(--primary-color) transition duration-300">
+            <div
+              className="group flex flex-col md:flex-row gap-4 bg-(--primary-color)/10 p-6 rounded-lg shadow-md border-2 border-(--primary-color)/10 hover:border-(--primary-color) transition duration-300"
+              data-aos="fade-right"
+              data-aos-duration="2000"
+            >
               <div className="">
                 <span className="">
                   <FaDollarSign className="w-16 h-16 p-4 text-white bg-(--primary-color) rounded-2xl group-hover:rotate-12 transition" />
@@ -215,7 +209,11 @@ export default function About() {
                 </p>
               </div>
             </div>
-            <div className="group flex flex-col md:flex-row gap-4 bg-(--primary-color)/10 p-6 rounded-lg shadow-md border-2 border-(--primary-color)/10 hover:border-(--primary-color) transition duration-300">
+            <div
+              className="group flex flex-col md:flex-row gap-4 bg-(--primary-color)/10 p-6 rounded-lg shadow-md border-2 border-(--primary-color)/10 hover:border-(--primary-color) transition duration-300"
+              data-aos="fade-left"
+              data-aos-duration="2000"
+            >
               <div className="">
                 <span className="">
                   <MdSupportAgent className="w-16 h-16 p-4 text-white bg-(--primary-color) rounded-2xl group-hover:rotate-12 transition" />
@@ -235,7 +233,7 @@ export default function About() {
             </div>
           </div>
         </div>
-        <div>
+        <div data-aos="zoom-in-down" data-aos-duration="1000">
           <h2 className="text-3xl md:text-5xl font-extrabold text-center mt-10 mb-6">
             Client Testimonials
           </h2>
@@ -262,6 +260,8 @@ export default function About() {
             }}
             modules={[Pagination]}
             className="mySwiper mt-10"
+            data-aos="fade-left"
+            data-aos-duration="2000"
           >
             <SwiperSlide>
               <div className="flex flex-col justify-center text-center items-center p-6 rounded-lg shadow-md border-2 border-(--primary-color)/10 cursor-grab">
@@ -274,10 +274,10 @@ export default function About() {
                 </div>
                 <div className="mt-4">
                   <p className="lora text-lg text-(--text-color)">
-                    "WebGrow's expertise in web development and digital
-                    marketing has been instrumental in our business growth.
-                    Their team is responsive, creative, and dedicated to
-                    delivering results."
+                    "Working with WebGrow was an amazing experience. They
+                    created a modern and responsive website that perfectly
+                    represents our brand. Their communication and support
+                    throughout the project were outstanding."
                   </p>
                   <p className="flex text-orange-400 gap-1 justify-center my-4">
                     <FaStar className="w-5 h-5"></FaStar>
@@ -288,7 +288,7 @@ export default function About() {
                   </p>
                   <h4 className="text-xl font-semibold mt-4">Emily Johnson</h4>
                   <p className="text-sm text-(--text-color)">
-                    Founder, Startup XYZ
+                    Founder, Bright Vision
                   </p>
                 </div>
               </div>
@@ -304,9 +304,10 @@ export default function About() {
                 </div>
                 <div className="mt-4">
                   <p className="lora text-lg text-(--text-color)">
-                    "WebGrow transformed our online presence with a stunning
-                    digital marketing strategies. Our traffic and sales have
-                    significantly increased since working with them."
+                    "WebGrow helped us improve our online visibility through
+                    effective SEO and digital marketing strategies. We noticed a
+                    significant increase in traffic and customer engagement
+                    within a short time."
                   </p>
                   <p className="flex text-orange-400 gap-1 justify-center my-4">
                     <FaStar className="w-5 h-5"></FaStar>
@@ -317,7 +318,7 @@ export default function About() {
                   </p>
                   <h4 className="text-xl font-semibold mt-4">Michael Brown</h4>
                   <p className="text-sm text-(--text-color)">
-                    CTO, Tech Solutions
+                    Marketing Manager, Nexa Solutions
                   </p>
                 </div>
               </div>
@@ -333,10 +334,9 @@ export default function About() {
                 </div>
                 <div className="mt-4">
                   <p className="lora text-lg text-(--text-color)">
-                    "WebGrow's expertise in web development and digital
-                    marketing has been instrumental in our business growth.
-                    Their team is responsive, creative, and dedicated to
-                    delivering results."
+                    "Their team delivered our project on time with exceptional
+                    quality. The design, performance, and user experience of our
+                    website exceeded our expectations."
                   </p>
                   <p className="flex text-orange-400 gap-1 justify-center my-4">
                     <FaStar className="w-5 h-5"></FaStar>
@@ -347,7 +347,7 @@ export default function About() {
                   </p>
                   <h4 className="text-xl font-semibold mt-4">Sarah Lee</h4>
                   <p className="text-sm text-(--text-color)">
-                    Marketing Director, Creative Agency
+                    Creative Director, Pixel Studio
                   </p>
                 </div>
               </div>
@@ -363,10 +363,9 @@ export default function About() {
                 </div>
                 <div className="mt-4">
                   <p className="lora text-lg text-(--text-color)">
-                    "WebGrow's expertise in web development and digital
-                    marketing has been instrumental in our business growth.
-                    Their team is responsive, creative, and dedicated to
-                    delivering results."
+                    "WebGrow provided excellent support from start to finish.
+                    Their attention to detail and creative approach helped our
+                    business establish a stronger digital presence."
                   </p>
                   <p className="flex text-orange-400 gap-1 justify-center my-4">
                     <FaStar className="w-5 h-5"></FaStar>
@@ -376,9 +375,7 @@ export default function About() {
                     <FaRegStar className="w-5 h-5"></FaRegStar>
                   </p>
                   <h4 className="text-xl font-semibold mt-4">David Kim</h4>
-                  <p className="text-sm text-(--text-color)">
-                    CEO, Startup Inc.
-                  </p>
+                  <p className="text-sm text-(--text-color)">CEO, InnovateX</p>
                 </div>
               </div>
             </SwiperSlide>
