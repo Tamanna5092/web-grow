@@ -117,8 +117,6 @@ export default function About() {
         </h2>
         <div
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 my-10"
-          data-aos="fade-up"
-          data-aos-duration="2000"
         >
           {whatWeOffer.map((service) => {
             const Icon = service.icon;

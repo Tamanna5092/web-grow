@@ -95,7 +95,7 @@ export default function Navbar() {
       </li>
       <li>
         <NavLink
-          to="projects"
+          to="portfolio"
           onClick={() => setOpenMenu(false)}
           className={({ isActive }) =>
             isActive ? "navlink-active" : "navlink-inactive"

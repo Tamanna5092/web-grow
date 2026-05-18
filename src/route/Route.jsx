@@ -4,12 +4,12 @@ import Home from "../components/Home/Home";
 import About from "../pages/About/About";
 import Skills from "../pages/Skills/Skills";
 import Services from "../pages/Services/Services";
-import Projects from "../pages/Projects/Projects";
 import Contact from "../pages/Contact/Contact";
 import WebDevelopment from "../components/WebDevelopment/WebDevelopment";
 import DigitalMarketing from "../components/DigitalMarketing/DigitalMarketing";
 import ServiceDetails from "../pages/ServiceDetails/ServiceDetails";
 import TeamMemberDetails from "../pages/TeamMemberDetails/TeamMemberDetails";
+import Portfolio from "../pages/Portfolio/Portfolio";
 
 const Route = createBrowserRouter([
   {
@@ -28,7 +28,7 @@ const Route = createBrowserRouter([
           { path: ":category/service-details/:slug", Component: ServiceDetails },
         ],
       },
-      { path: "projects", Component: Projects },
+      { path: "portfolio", Component: Portfolio },
       { path: "contact", Component: Contact },
       { path: "team-member/:slug", Component: TeamMemberDetails },
     ],
