@@ -1,9 +1,10 @@
+import React from "react";
 import { FaCheckCircle } from "react-icons/fa";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { Link } from "react-router";
-import digitalMarketingServices from "../../utilities/digitalMarketing";
+import graphicDesignServices from "../../utilities/graphicDesign";
 
-export default function DigitalMarketing() {
+export default function GraphicDesign() {
   return (
     <div className="max-w-7xl mx-auto">
       <div
@@ -11,7 +12,7 @@ export default function DigitalMarketing() {
         data-aos="fade-up"
         data-aos-duration="1000"
       >
-        {digitalMarketingServices.map((service) => {
+        {graphicDesignServices.map((service) => {
           const Icon = service.icon;
           return (
             <div
@@ -35,7 +36,7 @@ export default function DigitalMarketing() {
                 ))}
               </ul>
               <Link
-                to={`/services/digital-marketing/${service.slug}`}
+                to={`/services/graphic-design/${service.slug}`}
                 className="w-full flex justify-center items-center gap-2 group-hover:gap-4 mt-6 btn-primary-custom "
               >
                 See Details

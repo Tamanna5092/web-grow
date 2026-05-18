@@ -4,6 +4,7 @@ import DigitalMarketing from "../../utilities/digitalMarketing";
 import image from "../../assets/background.jpg";
 import { FaChartLine, FaCheckCircle } from "react-icons/fa";
 import { FaArrowRightLong } from "react-icons/fa6";
+import graphicDesign from "../../utilities/graphicDesign";
 
 export default function ServiceDetails() {
   const { category, slug } = useParams();
@@ -15,6 +16,8 @@ export default function ServiceDetails() {
     services = WebDevelopment;
   } else if (category === "digital-marketing") {
     services = DigitalMarketing;
+  } else if (category === "graphic-design") {
+    services = graphicDesign;
   }
 
   const service = services.find((item) => item.slug === slug);

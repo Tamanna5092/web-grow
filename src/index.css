@@ -24,7 +24,7 @@ body {
 }
 
 [data-theme="dark"] {
-  --primary-color: #facc15;
+  --primary-color: rgb(250 204 21 / 0.8);
   --text-color: #b5b8bf;
 }
 

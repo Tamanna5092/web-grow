@@ -20,7 +20,7 @@ export default function AboutUs() {
           believe every business has its own unique identity, and our mission is
           to present that identity beautifully in the digital world.{" "}
           <Link to="/about" className="text-(--primary-color) hover:underline">
-            More
+            More...
           </Link>
         </p>
       </div>

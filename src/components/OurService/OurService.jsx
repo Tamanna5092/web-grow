@@ -28,7 +28,7 @@ export default function OurService() {
             <MdOutlineCampaign className="w-16 h-16" />
           </span>
           <h2 className="text-2xl font-bold mt-6">Digital Marketing</h2>
-          <p className="text-center mt-4 lora text-lg group-hover:text-white">
+          <p className="text-center mt-4 lora text-lg text-(--text-color) group-hover:text-white">
             We provide comprehensive digital marketing services, including SEO,
             social media marketing, and PPC advertising, to help you reach your
             target audience effectively.
@@ -64,10 +64,10 @@ export default function OurService() {
           </span>
           <h2 className="text-2xl font-bold mt-6">Graphic Design</h2>
           <p className="text-center mt-4 lora text-lg text-(--text-color) group-hover:text-white">
-            We create modern, responsive websites tailored to your business
-            needs.
+            We offer creative graphic design services, including logo design,
+            branding, and marketing materials, to help your business stand out.
           </p>
-          <Link to="services/web-development" className="mt-6">
+          <Link to="services/graphic-design" className="mt-6">
             <FaArrowRightLong className="w-6 h-6" />
           </Link>
         </div>

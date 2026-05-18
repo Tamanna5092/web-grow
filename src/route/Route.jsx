@@ -7,6 +7,7 @@ import Services from "../pages/Services/Services";
 import Contact from "../pages/Contact/Contact";
 import WebDevelopment from "../components/WebDevelopment/WebDevelopment";
 import DigitalMarketing from "../components/DigitalMarketing/DigitalMarketing";
+import GraphicDesign from "../components/GraphicDesign/GraphicDesign";
 import ServiceDetails from "../pages/ServiceDetails/ServiceDetails";
 import TeamMemberDetails from "../pages/TeamMemberDetails/TeamMemberDetails";
 import Portfolio from "../pages/Portfolio/Portfolio";
@@ -25,7 +26,8 @@ const Route = createBrowserRouter([
         children: [
           { path: "web-development", Component: WebDevelopment },
           { path: "digital-marketing", Component: DigitalMarketing },
-          { path: ":category/service-details/:slug", Component: ServiceDetails },
+          { path: "graphic-design", Component: GraphicDesign },
+          { path: ":category/:slug", Component: ServiceDetails },
         ],
       },
       { path: "portfolio", Component: Portfolio },

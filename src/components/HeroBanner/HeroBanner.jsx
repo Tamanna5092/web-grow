@@ -15,8 +15,8 @@ export default function HeroBanner() {
           Welcome to WebGrow
         </h1>
         <p className="text-center lora mt-4 text-2xl md:text-4xl">
-          Your one-stop solution for all your web development and digital
-          marketing needs.
+          Your one-stop solution for all your web development, digital
+          marketing  and graphic design needs.
         </p>
       </div>
     </div>

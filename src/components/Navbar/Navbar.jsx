@@ -3,6 +3,7 @@ import { FaRegMoon } from "react-icons/fa";
 import { IoClose, IoMenuSharp } from "react-icons/io5";
 import { TiWeatherSunny } from "react-icons/ti";
 import { Link, NavLink } from "react-router";
+import logo from "../../assets/logo.png";
 
 export default function Navbar() {
   const [theme, setTheme] = useState("dark");
@@ -90,6 +91,17 @@ export default function Navbar() {
                 Digital Marketing
               </NavLink>
             </li>
+            <li>
+              <NavLink
+                to={"services/graphic-design"}
+                onClick={() => setOpenMenu(false)}
+                className={({ isActive }) =>
+                  isActive ? "navlink-active" : "navlink-inactive"
+                }
+              >
+                Graphic Design
+              </NavLink>
+            </li>
           </ul>
         </details>
       </li>
@@ -125,9 +137,8 @@ export default function Navbar() {
           <div>
             <Link
               to={"/"}
-              className={`text-4xl font-bold text-(--primary-color)`}
             >
-              WebGrow
+              <img src={logo} alt="Company Logo" className="w-32 mb-4" />
             </Link>
           </div>
           <div className="hidden sm:flex">
