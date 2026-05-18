@@ -79,13 +79,13 @@ export default function Footer() {
             Our Services
           </h6>
           <a className="hover:text-(--primary-color) hover:underline transition">
-            Branding
+            Digital Marketing
           </a>
           <a className="hover:text-(--primary-color) hover:underline transition">
-            Design
+            Web Development
           </a>
           <a className="hover:text-(--primary-color) hover:underline transition">
-            Marketing
+            Graphic
           </a>
           <a className="hover:text-(--primary-color) hover:underline transition">
             Advertisement

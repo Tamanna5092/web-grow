@@ -13,7 +13,7 @@ export default function FAQ() {
     {
       question: "What services do you offer?",
       answer:
-        "We provide web development, SEO optimization, and digital marketing services to help your business grow online.",
+        "We provide web development, SEO optimization, digital marketing and graphic design services to help your business grow online.",
     },
     {
       question: "How long does it take to build a website?",

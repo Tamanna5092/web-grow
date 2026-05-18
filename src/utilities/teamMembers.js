@@ -15,7 +15,7 @@ const teamMembers = [
     role: "Digital Marketer & SEO Expert",
     slug: "shariful-islam-siam",
     image:
-      "https://i.ibb.co.com/YFQ1Rj74/Shoriful-Islam-Siam-Digital-Marketer.jpg",
+      "https://i.ibb.co.com/HptfDSY4/Shoriful-Islam-Siam-Digital-Marketer-Profile-jpg.jpg",
 
     about:
       "I am a passionate and dedicated digital marketing professional who loves exploring new strategies in online growth and business development. I am currently a student pursuing a BBA in Accounting (Honours), 2nd year. Alongside my academic journey, I am actively developing my skills in SEO and digital marketing to build a strong career in this field.",
@@ -54,7 +54,6 @@ const teamMembers = [
       },
     ],
   },
-
   {
     id: 2,
     name: "Tamanna Akter Moni",
@@ -117,7 +116,7 @@ const teamMembers = [
     image: "https://i.ibb.co.com/Y4ct7ydv/Anik-Jaman.jpg",
 
     about:
-      "I am a dedicated graphic designer with a strong interest in creating clean, modern, and engaging visual designs. Alongside my academic journey in BBA Management (Honours), I continuously explore new design trends and improve my creative skills to produce impactful visual content for brands and businesses",
+      "I am a dedicated graphic designer with a strong interest in creating clean, modern, and engaging visual designs. Alongside my academic journey in Bachelor of Arts in Economics, I continuously explore new design trends and improve my creative skills to produce impactful visual content for brands and businesses",
 
     description:
       "My work focuses on transforming ideas into visually compelling designs that communicate clearly and leave a lasting impression. From brand identity design to social media graphics and digital content, I aim to create designs that are both creative and strategically effective. With experience in tools like Photoshop, Illustrator, InDesign, and Figma, I enjoy combining creativity, typography, color theory, and layout principles to build professional and engaging visuals tailored to each client's goals and audience. My design process involves understanding the client's vision, researching the target audience, and crafting unique visual solutions that align with business goals. I specialize in creating compelling brand identities, designing engaging digital graphics for social media and marketing campaigns, and developing visually appealing layouts for websites and print materials. My goal is to deliver high-quality designs that not only look great but also effectively communicate the brand's message and values.",

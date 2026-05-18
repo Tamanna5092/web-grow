@@ -34,7 +34,7 @@ export default function OurTeam() {
               </div>
               <Link
                 to={`/team-member/${member.slug}`}
-                className="w-12 h-12 flex items-center justify-center rounded-full bg-white text-black opacity-0 scale-75 group-hover:opacity-100 group-hover:scale-100 transition duration-300"
+                className="w-12 h-12 flex items-center justify-center rounded-full bg-white text-black opacity-100 scale-100 md:opacity-0 md:scale-75 group-hover:opacity-100 group-hover:scale-100 transition duration-300"
               >
                 <FaArrowRightLong />
               </Link>

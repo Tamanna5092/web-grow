@@ -29,9 +29,7 @@ export default function OurService() {
           </span>
           <h2 className="text-2xl font-bold mt-6">Digital Marketing</h2>
           <p className="text-center mt-4 lora text-lg text-(--text-color) group-hover:text-white">
-            We provide comprehensive digital marketing services, including SEO,
-            social media marketing, and PPC advertising, to help you reach your
-            target audience effectively.
+            We help your business grow online with SEO, social media marketing, and smart digital strategies.
           </p>
           <Link to="services/digital-marketing" className="mt-6">
             <FaArrowRightLong className="w-6 h-6" />
@@ -47,8 +45,7 @@ export default function OurService() {
           </span>
           <h2 className="text-2xl font-bold mt-6">Web Development</h2>
           <p className="text-center mt-4 lora text-lg text-(--text-color) group-hover:text-white">
-            We create modern, responsive websites tailored to your business
-            needs.
+            We build modern, responsive, and user-friendly websites that look great on every device.
           </p>
           <Link to="services/web-development" className="mt-6">
             <FaArrowRightLong className="w-6 h-6" />
@@ -64,8 +61,7 @@ export default function OurService() {
           </span>
           <h2 className="text-2xl font-bold mt-6">Graphic Design</h2>
           <p className="text-center mt-4 lora text-lg text-(--text-color) group-hover:text-white">
-            We offer creative graphic design services, including logo design,
-            branding, and marketing materials, to help your business stand out.
+            We create creative designs, logos, and branding materials that make your business stand out.
           </p>
           <Link to="services/graphic-design" className="mt-6">
             <FaArrowRightLong className="w-6 h-6" />

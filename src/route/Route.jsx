@@ -11,6 +11,7 @@ import GraphicDesign from "../components/GraphicDesign/GraphicDesign";
 import ServiceDetails from "../pages/ServiceDetails/ServiceDetails";
 import TeamMemberDetails from "../pages/TeamMemberDetails/TeamMemberDetails";
 import Portfolio from "../pages/Portfolio/Portfolio";
+import SkillsInfo from "../pages/SkillsInfo/SkillsInfo";
 
 const Route = createBrowserRouter([
   {
@@ -20,6 +21,7 @@ const Route = createBrowserRouter([
       { index: true, Component: Home },
       { path: "about", Component: About },
       { path: "skills", Component: Skills },
+      { path: "skills/:slug", Component: SkillsInfo },
       {
         path: "services",
         Component: Services,

@@ -84,7 +84,7 @@ export default function About() {
   ];
 
   return (
-    <div>
+    <div className="overflow-hidden">
       <div className="relative w-full h-150 md:h-96 px-2 md:px-0">
         <img className="w-full h-full object-cover" src={about} alt="Banner" />
         <div className="absolute inset-0 bg-black/60"></div>

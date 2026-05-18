@@ -11,65 +11,221 @@ const projects = [
       "Star Shelter Tourism is your trusted guide for planning your next great adventure.",
     liveLink: "https://starshelter-tourism.web.app",
   },
+
   {
     id: 2,
-    title: "Youtube SEO Campaign",
-    category: "Digital Marketing",
-    image:
-      "https://i.ibb.co.com/HptfDSY4/Shoriful-Islam-Siam-Digital-Marketer-Profile-jpg.jpg",
-    shortDescription:
-      "Successful Youtube SEO campaign boosting rankings & traffic.",
-    liveLink:
-      "https://drive.google.com/file/d/172vQznDpOgulDbBOsGileZhrJsbaFI7Z/view",
-  },
-  {
-    id: 3,
-    title: "Creative Design Portfolio",
-    category: "Graphic Design",
-    image: "https://i.ibb.co.com/Y4ct7ydv/Anik-Jaman.jpg",
-    shortDescription: "Modern branding & graphic design showcase.",
-    liveLink:
-      "https://drive.google.com/file/d/1DRiXtZoSMu670KEzD4hmM_zwILADQrR8/view?usp=drive_link",
-  },
-  {
-    id: 4,
     title: "Star Land Line Resort",
     category: "Web Development",
     image: "https://i.ibb.co.com/5X2150fm/real-state1.png",
     shortDescription:
-      "In this Real Estate project, users can explore detailed information about various houses available for rent and purchase.",
+      "Explore modern real estate properties with detailed information and smooth user experience.",
     liveLink: "https://real-estate-88042.web.app",
   },
+
   {
-    id: 5,
+    id: 3,
     title: "Book Vibe",
     category: "Web Development",
     image: "https://i.ibb.co.com/JWCPt3jz/books.png",
     shortDescription:
-      "Book Vibe is a simple frontend application built with React and Local Storage.",
+      "Simple and interactive book management application built with React.",
     liveLink: "https://equal-thumb.surge.sh",
   },
+
   {
-    id: 6,
+    id: 4,
     title: "Book Store Library",
     category: "Web Development",
     image: "https://i.ibb.co.com/YB1hSQts/library.png",
     shortDescription:
-      "Comprehensive book store management library for efficient inventory & sales tracking.",
+      "Comprehensive book store management system for inventory and sales tracking.",
     liveLink: "https://dimple-firebase-3af84.firebaseapp.com",
   },
+
   {
-    id: 7,
+    id: 5,
+    title: "Youtube SEO",
+    category: "Digital Marketing",
+    image:
+      "https://i.ibb.co.com/HptfDSY4/Shoriful-Islam-Siam-Digital-Marketer-Profile-jpg.jpg",
+    shortDescription:
+      "Successful YouTube SEO campaign boosting rankings and audience engagement.",
+    liveLink:
+      "https://drive.google.com/file/d/172vQznDpOgulDbBOsGileZhrJsbaFI7Z/view",
+  },
+
+  {
+    id: 6,
     title: "Google Ads Campaign",
     category: "Digital Marketing",
     image:
       "https://i.ibb.co.com/YFQ1Rj74/Shoriful-Islam-Siam-Digital-Marketer.jpg",
     shortDescription:
-      "Successful Google Ads campaign driving conversions & sales.",
+      "High-performing Google Ads campaign generating leads and conversions.",
     liveLink:
       "https://drive.google.com/file/d/1c_tPnTrPNcfqPoxLxtkQf9nqXvqlnqBa/view",
   },
-];
+
+  {
+    id: 7,
+    title: "Facebook Marketing",
+    category: "Digital Marketing",
+    image:
+      "https://i.ibb.co.com/HptfDSY4/Shoriful-Islam-Siam-Digital-Marketer-Profile-jpg.jpg",
+    shortDescription:
+      "Creative Facebook marketing campaigns for audience growth and engagement.",
+    liveLink:
+      "https://drive.google.com/file/d/172vQznDpOgulDbBOsGileZhrJsbaFI7Z/view",
+  },
+
+  {
+    id: 8,
+    title: "Youtube Video Visibility",
+    category: "Digital Marketing",
+    image:
+      "https://i.ibb.co.com/HptfDSY4/Shoriful-Islam-Siam-Digital-Marketer-Profile-jpg.jpg",
+    shortDescription:
+      "Boosted YouTube video visibility with targeted promotional strategies.",
+    liveLink:
+      "https://drive.google.com/file/d/172vQznDpOgulDbBOsGileZhrJsbaFI7Z/view",
+  },
+
+  {
+    id: 9,
+    title: "SEO Optimization",
+    category: "Digital Marketing",
+    image:
+      "https://i.ibb.co.com/HptfDSY4/Shoriful-Islam-Siam-Digital-Marketer-Profile-jpg.jpg",
+    shortDescription:
+      "Improved website rankings using modern SEO strategies and optimization.",
+    liveLink:
+      "https://drive.google.com/file/d/172vQznDpOgulDbBOsGileZhrJsbaFI7Z/view",
+  },
+
+  {
+    id: 10,
+    title: "Youtube Video Promotion",
+    category: "Digital Marketing",
+    image:
+      "https://i.ibb.co.com/HptfDSY4/Shoriful-Islam-Siam-Digital-Marketer-Profile-jpg.jpg",
+    shortDescription:
+      "Promoted YouTube videos effectively to increase views and audience engagement.",
+    liveLink:
+      "https://drive.google.com/file/d/172vQznDpOgulDbBOsGileZhrJsbaFI7Z/view",
+  },
+
+  {
+    id: 11,
+    title: "YouTube Channel Growth",
+    category: "Digital Marketing",
+    image:
+      "https://i.ibb.co.com/HptfDSY4/Shoriful-Islam-Siam-Digital-Marketer-Profile-jpg.jpg",
+    shortDescription:
+      "Helped YouTube channels grow organically through SEO and content strategy.",
+    liveLink:
+      "https://drive.google.com/file/d/172vQznDpOgulDbBOsGileZhrJsbaFI7Z/view",
+  },
+
+  {
+    id: 12,
+    title: "Google Search Ads",
+    category: "Digital Marketing",
+    image:
+      "https://i.ibb.co.com/HptfDSY4/Shoriful-Islam-Siam-Digital-Marketer-Profile-jpg.jpg",
+    shortDescription:
+      "Targeted Google Search Ads campaigns to improve clicks and conversions.",
+    liveLink:
+      "https://drive.google.com/file/d/172vQznDpOgulDbBOsGileZhrJsbaFI7Z/view",
+  },
+
+  {
+    id: 13,
+    title: "Creative Design",
+    category: "Graphic Design",
+    image: "https://i.ibb.co.com/Y4ct7ydv/Anik-Jaman.jpg",
+    shortDescription:
+      "Modern branding and creative graphic design showcase for businesses.",
+    liveLink:
+      "https://drive.google.com/file/d/1DRiXtZoSMu670KEzD4hmM_zwILADQrR8/view?usp=drive_link",
+  },
+
+  {
+    id: 14,
+    title: "Logo Design",
+    category: "Graphic Design",
+    image: "https://i.ibb.co.com/Y4ct7ydv/Anik-Jaman.jpg",
+    shortDescription:
+      "Professional and unique logo designs for modern brands.",
+    liveLink:
+      "https://drive.google.com/file/d/1DRiXtZoSMu670KEzD4hmM_zwILADQrR8/view?usp=drive_link",
+  },
+
+  {
+    id: 15,
+    title: "Social Media Banner",
+    category: "Graphic Design",
+    image: "https://i.ibb.co.com/Y4ct7ydv/Anik-Jaman.jpg",
+    shortDescription:
+      "Creative social media banners designed for better engagement.",
+    liveLink:
+      "https://drive.google.com/file/d/1DRiXtZoSMu670KEzD4hmM_zwILADQrR8/view?usp=drive_link",
+  },
+
+  {
+    id: 16,
+    title: "Poster Design",
+    category: "Graphic Design",
+    image: "https://i.ibb.co.com/Y4ct7ydv/Anik-Jaman.jpg",
+    shortDescription:
+      "Eye-catching poster designs for promotions and marketing campaigns.",
+    liveLink:
+      "https://drive.google.com/file/d/1DRiXtZoSMu670KEzD4hmM_zwILADQrR8/view?usp=drive_link",
+  },
+
+  {
+    id: 17,
+    title: "Flyer Design",
+    category: "Graphic Design",
+    image: "https://i.ibb.co.com/Y4ct7ydv/Anik-Jaman.jpg",
+    shortDescription:
+      "Clean and professional flyer designs for business promotions.",
+    liveLink:
+      "https://drive.google.com/file/d/1DRiXtZoSMu670KEzD4hmM_zwILADQrR8/view?usp=drive_link",
+  },
+
+  {
+    id: 18,
+    title: "Product Branding",
+    category: "Graphic Design",
+    image: "https://i.ibb.co.com/Y4ct7ydv/Anik-Jaman.jpg",
+    shortDescription:
+      "Creative product branding and packaging design solutions.",
+    liveLink:
+      "https://drive.google.com/file/d/1DRiXtZoSMu670KEzD4hmM_zwILADQrR8/view?usp=drive_link",
+  },
+
+  {
+    id: 19,
+    title: "Business Card",
+    category: "Graphic Design",
+    image: "https://i.ibb.co.com/Y4ct7ydv/Anik-Jaman.jpg",
+    shortDescription:
+      "Modern and professional business card design collection.",
+    liveLink:
+      "https://drive.google.com/file/d/1DRiXtZoSMu670KEzD4hmM_zwILADQrR8/view?usp=drive_link",
+  },
+
+  {
+    id: 20,
+    title: "3D Artwork",
+    category: "Graphic Design",
+    image: "https://i.ibb.co.com/Y4ct7ydv/Anik-Jaman.jpg",
+    shortDescription:
+      "Creative 3D artwork and modern visual design projects.",
+    liveLink:
+      "https://drive.google.com/file/d/1DRiXtZoSMu670KEzD4hmM_zwILADQrR8/view?usp=drive_link",
+  },
+]
 
 export default function Portfolio() {
   const [selectedCategory, setSelectedCategory] = useState("All");

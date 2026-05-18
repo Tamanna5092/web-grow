@@ -35,7 +35,7 @@ export default function Contact() {
       );
   };
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-7xl mx-auto my-10 px-4 md:px-0">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-7xl mx-auto my-10 px-4 md:px-0 overflow-hidden">
       <div data-aos="fade-right" data-aos-duration="1000">
         <h3 className="text-2xl md:text-3xl font-bold text-(--primary-color) w-fit border-b-2 border-(--primary-color) mb-10">
           Contact Us

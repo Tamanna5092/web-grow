@@ -24,7 +24,7 @@ export default function TeamMemberDetails() {
     <div className="max-w-7xl mx-auto my-10 px-4 md:px-0">
       <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
         <div className="col-span-2 order-2 md:order-1">
-          <h1 className="font-lato text-3xl text-(--primary-color) font-extrabold md:text-5xl">
+          <h1 className="font-lato text-3xl text-(--primary-color) font-extrabold md:text-4xl">
             {member.name}
           </h1>
           <p
@@ -81,6 +81,7 @@ export default function TeamMemberDetails() {
             {member.socialLinks?.map((link, index) => (
               <a
                 key={link.name}
+                target="_blank"
                 rel="noopener noreferrer"
                 href={link.url}
                 aria-label={link.name}
