@@ -18,19 +18,21 @@ export default function SkillsInfo() {
   const Icon = skill.icon;
 
   return (
-    <div className="max-w-7xl mx-auto px-4 md:px-0 py-16">
+    <div className="max-w-7xl mx-auto px-4 md:px-0 my-10">
       <div
         className="bg-linear-to-r from-(--primary-color)/20 to-transparent 
         border border-(--primary-color)/30 rounded-3xl p-8 md:p-14"
       >
         <div className="flex flex-col md:flex-row items-center gap-8">
           <div
+            data-aos="fade-right"
+            data-aos-duration="1000"
             className="w-28 h-28 rounded-3xl bg-(--primary-color)
             flex items-center justify-center shadow-xl"
           >
             <Icon className="w-14 h-14 text-white" />
           </div>
-          <div>
+          <div data-aos="fade-left" data-aos-duration="1000">
             <h1 className="text-4xl md:text-6xl font-extrabold">
               {skill.title}
             </h1>
@@ -46,7 +48,9 @@ export default function SkillsInfo() {
           className="p-8 rounded-2xl border border-(--primary-color)/30
           box-shadow-custom"
         >
-          <h2 className="text-3xl font-bold mb-6">How It Works</h2>
+          <h2 className="text-3xl font-bold mb-6 w-fit border-b-3 border-(--primary-color)">
+            How It Works:
+          </h2>
           <p className="text-lg leading-8 text-(--text-color) lora">
             {skill.howItWorks}
           </p>
@@ -55,10 +59,17 @@ export default function SkillsInfo() {
           className="p-8 rounded-2xl border border-(--primary-color)/30
           box-shadow-custom"
         >
-          <h2 className="text-3xl font-bold mb-6">Benefits</h2>
+          <h2 className="text-3xl font-bold mb-6 w-fit border-b-3 border-(--primary-color)">
+            Benefits:
+          </h2>
           <div className="space-y-4">
             {skill.benefits.map((benefit, index) => (
-              <div key={index} className="flex items-center gap-4">
+              <div
+                key={index}
+                className="flex items-center gap-4"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+              >
                 <div className="w-3 h-3 rounded-full bg-(--primary-color)"></div>
                 <p className="text-lg text-(--text-color)">{benefit}</p>
               </div>
@@ -74,6 +85,9 @@ export default function SkillsInfo() {
         <div className="flex flex-wrap justify-center gap-5">
           {skill.tools.map((tool, index) => (
             <span
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay={index * 100}
               key={index}
               className=" px-6 py-3 rounded-full bg-(--primary-color)/10  border border-(--primary-color)/30 text-lg font-semibold hover:bg-(--primary-color) hover:text-white transition duration-500"
             >

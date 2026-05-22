@@ -4,13 +4,20 @@ import { IoClose, IoMenuSharp } from "react-icons/io5";
 import { TiWeatherSunny } from "react-icons/ti";
 import { Link, NavLink } from "react-router";
 import logo from "../../assets/logo.png";
+import { FaChevronDown } from "react-icons/fa6";
 
 export default function Navbar() {
   const [theme, setTheme] = useState("dark");
   const [openMenu, setOpenMenu] = useState(false);
+  const [serviceOpen, setServiceOpen] = useState(false);
 
   const handleOpenMenu = () => {
     setOpenMenu((open) => !open);
+  };
+
+  const closeMenu = () => {
+    setOpenMenu(false);
+    setServiceOpen(false);
   };
 
   useEffect(() => {
@@ -33,7 +40,7 @@ export default function Navbar() {
       <li>
         <NavLink
           to="/"
-          onClick={() => setOpenMenu(false)}
+          onClick={closeMenu}
           className={({ isActive }) =>
             isActive ? "navlink-active" : "navlink-inactive"
           }
@@ -44,7 +51,7 @@ export default function Navbar() {
       <li>
         <NavLink
           to="about"
-          onClick={() => setOpenMenu(false)}
+          onClick={closeMenu}
           className={({ isActive }) =>
             isActive ? "navlink-active" : "navlink-inactive"
           }
@@ -55,7 +62,7 @@ export default function Navbar() {
       <li>
         <NavLink
           to="skills"
-          onClick={() => setOpenMenu(false)}
+          onClick={closeMenu}
           className={({ isActive }) =>
             isActive ? "navlink-active" : "navlink-inactive"
           }
@@ -64,15 +71,21 @@ export default function Navbar() {
         </NavLink>
       </li>
       <li>
-        <details>
-          <summary className="text-(--primary-color) navlink-inactive">
+        <details open={serviceOpen}>
+          <summary
+            onClick={(e) => {
+              e.preventDefault();
+              setServiceOpen(!serviceOpen);
+            }}
+            className="text-(--primary-color) navlink-inactive"
+          >
             Services
           </summary>
-          <ul class="p-2 bg-base-100 w-52 z-1 space-y-2">
+          <ul className="p-2 bg-base-100 w-52 z-1 space-y-2">
             <li>
               <NavLink
                 to={"services/web-development"}
-                onClick={() => setOpenMenu(false)}
+                onClick={closeMenu}
                 className={({ isActive }) =>
                   isActive ? "navlink-active" : "navlink-inactive"
                 }
@@ -83,7 +96,7 @@ export default function Navbar() {
             <li>
               <NavLink
                 to={"services/digital-marketing"}
-                onClick={() => setOpenMenu(false)}
+                onClick={closeMenu}
                 className={({ isActive }) =>
                   isActive ? "navlink-active" : "navlink-inactive"
                 }
@@ -94,7 +107,7 @@ export default function Navbar() {
             <li>
               <NavLink
                 to={"services/graphic-design"}
-                onClick={() => setOpenMenu(false)}
+                onClick={closeMenu}
                 className={({ isActive }) =>
                   isActive ? "navlink-active" : "navlink-inactive"
                 }
@@ -108,7 +121,7 @@ export default function Navbar() {
       <li>
         <NavLink
           to="portfolio"
-          onClick={() => setOpenMenu(false)}
+          onClick={closeMenu}
           className={({ isActive }) =>
             isActive ? "navlink-active" : "navlink-inactive"
           }
@@ -119,7 +132,7 @@ export default function Navbar() {
       <li>
         <NavLink
           to="contact"
-          onClick={() => setOpenMenu(false)}
+          onClick={closeMenu}
           className={({ isActive }) =>
             isActive ? "navlink-active" : "navlink-inactive"
           }
@@ -135,9 +148,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-2 py-4 md:px-0">
         <div className="flex justify-between items-center">
           <div>
-            <Link
-              to={"/"}
-            >
+            <Link to={"/"}>
               <img src={logo} alt="Company Logo" className="w-32 mb-4" />
             </Link>
           </div>

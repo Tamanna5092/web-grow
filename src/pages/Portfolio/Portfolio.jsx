@@ -18,7 +18,7 @@ const projects = [
     category: "Web Development",
     image: "https://i.ibb.co.com/5X2150fm/real-state1.png",
     shortDescription:
-      "Explore modern real estate properties with detailed information and smooth user experience.",
+      "Explore modern real estate properties with details information & smooth user experience.",
     liveLink: "https://real-estate-88042.web.app",
   },
 
@@ -313,7 +313,7 @@ export default function Portfolio() {
             </div>
             <div className="mt-4 text-center">
               <h2 className="text-2xl font-bold">{project.title}</h2>
-              <p className="lora text-lg mt-2 px-4">
+              <p className="lora text-lg text-(--text-color) my-2 px-4">
                 {project.shortDescription}
               </p>
             </div>
